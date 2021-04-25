@@ -1,8 +1,33 @@
+:root {
+    --primary-color : #1C1D25;
+    --background-color : #F2F2F2;
+}
+
 body{
-    background: black;
-    background: white;
+    // background: black;
+    background: var(--background-color);
+    margin: 0;
+    font-family: 'Raleway';
+}
+
+a {
+    text-decoration: none;
+}
+
+nav{
+    display: none;
 }
 
 .logo{
-    text-decoration: none;
+    height : 3em;
+    width: auto;
+}
+
+.navbar{
+    background-color: var(--primary-color);
+    padding: 1em;
+
+    .menu{
+        fill : white;
+    }
 }
