@@ -1,6 +1,7 @@
 :root {
   --primary-color: #1C1D25;
   --background-color: #F2F2F2;
+  --grad-color: linear-gradient(to right, #312DFF,#45BCFF);
 }
 
 body {
@@ -13,13 +14,52 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  margin: 0;
+h1, h2, p {
+  color: white;
 }
 
 .logo {
   height: 3em;
   width: auto;
+}
+
+.gradient-button {
+  color: white;
+  font-family: poppins;
+  font-weight: 800;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF3D00), to(#FFB800));
+  background-image: linear-gradient(to right, #FF3D00, #FFB800);
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
+
+.section-heading {
+  font-family: 'Bebas Neue';
+  font-weight: 300;
+  font-size: 48px;
+  margin-top: 3em;
+  letter-spacing: 2px;
+  color: white;
+  padding: 0.3em;
+}
+
+.project-heading {
+  margin: 0;
+  padding-left: 1em;
+  font-family: 'Poppins';
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.project-number {
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 4em;
+  padding-right: 0.4em;
 }
 
 .navbar {
@@ -42,15 +82,6 @@ h1 {
   fill: white;
   height: 3.2em;
   width: auto;
-  cursor: pointer;
-}
-
-.gradient-button {
-  font-family: poppins;
-  font-weight: 800;
-  background-image: -webkit-gradient(linear, left top, right top, from(#FF3D00), to(#FFB800));
-  background-image: linear-gradient(to right, #FF3D00, #FFB800);
-  padding: 0.5em 2em;
   cursor: pointer;
 }
 
@@ -122,15 +153,99 @@ h1 {
   display: none;
 }
 
-.section-heading {
-  font-family: 'Bebas Neue';
-  font-weight: 300;
-  font-size: 48px;
-  margin-top: 3em;
-  letter-spacing: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#312DFF), to(#45BCFF));
-  background-image: linear-gradient(to right, #312DFF, #45BCFF);
-  color: white;
-  padding: 0.3em;
+.projects-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+.projects-section .project-mini {
+  position: relative;
+  margin-top: 5em;
+}
+
+.projects-section .project-mini .project-top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  position: relative;
+  margin: 2em 0em -2.2em 0em;
+}
+
+.projects-section .project-mini .project-top-section .heading-bg {
+  position: relative;
+  left: -4em;
+  top: 2.3em;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312DFF), to(#45BCFF));
+  background-image: linear-gradient(to right, #312DFF 30%, #45BCFF);
+  width: 70vw;
+  min-width: 15em;
+  height: 8vh;
+  min-height: 3em;
+  max-height: 5em;
+  -webkit-transform: skew(45deg) translateY(-50%);
+          transform: skew(45deg) translateY(-50%);
+}
+
+.projects-section .project-mini .mid-section {
+  background-color: #242729;
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+
+.projects-section .project-mini .mid-section .project-img-section {
+  position: relative;
+}
+
+.projects-section .project-mini .mid-section .project-img-section img {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  display: relative;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.projects-section .project-mini .mid-section .project-img-section .button-move-area {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  display: relative;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-section .project-mini .mid-section .project-img-section .button-move-area .axcessor-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.7em 0.7em;
+  margin-bottom: 1em;
+  margin-right: -0.8em;
+}
+
+.projects-section .project-mini .mid-section .project-para {
+  text-align: center;
+}
+
+.projects-section .project-mini .mid-section .project-para p {
+  text-align: left;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=style.css.map */
