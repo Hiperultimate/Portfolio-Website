@@ -4,7 +4,6 @@
 }
 
 body{
-    // background: black;
     background: var(--background-color);
     margin: 0;
     font-family: 'Raleway';
@@ -14,8 +13,8 @@ a {
     text-decoration: none;
 }
 
-nav{
-    display: none;
+h1{
+    margin:0;
 }
 
 .logo{
@@ -27,7 +26,118 @@ nav{
     background-color: var(--primary-color);
     padding: 1em;
 
-    .menu{
-        fill : white;
+    nav{
+        display: none;
     }
+
+    .container{
+        display: flex;
+        place-content: space-between;
+        
+        .menu{
+            fill : white;
+            height: 3.2em;
+            width: auto;
+            cursor: pointer;
+        }
+    }
+}
+
+.gradient-button{
+    font-family: poppins;
+    font-weight :800;
+    background-image: linear-gradient(to right,#FF3D00, #FFB800);
+    padding: 0.5em 2em ;
+    cursor: pointer;
+}
+
+.cover-page{
+    background-color: var(--primary-color);
+    min-height: 568px;
+    overflow: hidden;
+
+    h1,p,a{
+        color: white;
+        margin: 0;
+    }
+
+    h1{
+        font-size: 2.0em;
+        font-weight: 600;
+
+    }
+
+    .name{
+        font-family: 'poppins';
+        font-size: 1.125em;
+        font-weight: 200;
+    }
+
+    .container{
+        text-align: left;
+        position:relative;
+        padding-bottom: 10em;
+
+        .left-col{
+        
+            padding-left: 2.5em;
+            padding-top: 10vh;
+            height: 50%;
+            width: 70%;
+
+            .sub-head, .name{
+                z-index:1;
+            }
+
+            .hire-button{
+                position:relative;
+                top : 2em;
+                z-index :1;
+            }
+
+        }
+
+        .img-overflow{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin:0;
+
+            .desktop-logo{
+                display:block;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+
+                left: -0.5em;
+
+                transform: scale(1.4);
+                max-height: auto;
+                max-width: 110%;
+
+            }
+        }
+
+        
+    }
+
+    .desktop-socials{
+        display:none;
+    }
+    
+}
+
+.section-heading{
+    font-family: 'Bebas Neue';
+    font-weight: 300;
+    font-size: 48px;
+    margin-top: 3em;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #312DFF,#45BCFF);
+    color: white;
+    padding: 0.3em;
+}
+
+.projects-page{
+    
 }

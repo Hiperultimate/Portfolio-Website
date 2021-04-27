@@ -13,8 +13,8 @@ a {
   text-decoration: none;
 }
 
-nav {
-  display: none;
+h1 {
+  margin: 0;
 }
 
 .logo {
@@ -27,7 +27,110 @@ nav {
   padding: 1em;
 }
 
-.navbar .menu {
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .container .menu {
   fill: white;
+  height: 3.2em;
+  width: auto;
+  cursor: pointer;
+}
+
+.gradient-button {
+  font-family: poppins;
+  font-weight: 800;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF3D00), to(#FFB800));
+  background-image: linear-gradient(to right, #FF3D00, #FFB800);
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
+
+.cover-page {
+  background-color: var(--primary-color);
+  min-height: 568px;
+  overflow: hidden;
+}
+
+.cover-page h1, .cover-page p, .cover-page a {
+  color: white;
+  margin: 0;
+}
+
+.cover-page h1 {
+  font-size: 2.0em;
+  font-weight: 600;
+}
+
+.cover-page .name {
+  font-family: 'poppins';
+  font-size: 1.125em;
+  font-weight: 200;
+}
+
+.cover-page .container {
+  text-align: left;
+  position: relative;
+  padding-bottom: 10em;
+}
+
+.cover-page .container .left-col {
+  padding-left: 2.5em;
+  padding-top: 10vh;
+  height: 50%;
+  width: 70%;
+}
+
+.cover-page .container .left-col .sub-head, .cover-page .container .left-col .name {
+  z-index: 1;
+}
+
+.cover-page .container .left-col .hire-button {
+  position: relative;
+  top: 2em;
+  z-index: 1;
+}
+
+.cover-page .container .img-overflow {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+}
+
+.cover-page .container .img-overflow .desktop-logo {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: -0.5em;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  max-height: auto;
+  max-width: 110%;
+}
+
+.cover-page .desktop-socials {
+  display: none;
+}
+
+.section-heading {
+  font-family: 'Bebas Neue';
+  font-weight: 300;
+  font-size: 48px;
+  margin-top: 3em;
+  letter-spacing: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#312DFF), to(#45BCFF));
+  background-image: linear-gradient(to right, #312DFF, #45BCFF);
+  color: white;
+  padding: 0.3em;
 }
 /*# sourceMappingURL=style.css.map */
