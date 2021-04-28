@@ -61,6 +61,53 @@ h1,h2,p{
     padding-right: 0.4em;
 }
 
+.center-div{
+    width:90%;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label{
+    display: block;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    padding-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+input, textarea{
+    color: white;
+    resize: vertical;
+    font-family: 'Poppins';
+    outline: none;
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: none;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid white;
+}
+
+input[type="submit"]{
+    border: none;
+    display: inline-block;
+    padding: .7em .8em;
+    width: unset;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+        supported by Chrome, Edge, Opera and Firefox */
+}
+
 .navbar{
     background-color: var(--primary-color);
     padding: 1em;
@@ -163,6 +210,7 @@ h1,h2,p{
     flex-direction: column;
     overflow: hidden;
     background-color: var(--primary-color);
+    padding-bottom : 10vh;
 
     .project-mini{
         position : relative;
@@ -244,5 +292,77 @@ h1,h2,p{
             
             
         }
+    }
+}
+
+.aboutme-contact{
+    .aboutme{
+        background-color: var(--primary-color);
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+
+        .background-text{
+            white-space: nowrap;
+            font-family: 'Poppins';
+            font-weight: 800;
+            font-size: 144px;
+            position: absolute;
+            color:#22242C;
+            z-index: 0;
+            right:0;
+        }
+
+        .background-text-two{
+            z-index: 0;
+            bottom:0;
+            left: 0;
+            top: 3em;
+        }
+
+        .center-div{
+            .section-heading{
+                position: relative;
+                z-index: 1;
+                padding:0;
+                margin:0;
+            }    
+        }
+
+        .aboutme-para{
+            text-align: center;
+            p{
+                position: relative;
+                z-index: 1;
+                text-align: left;
+                width:90%;
+                height: auto;
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .contact-button{
+            position: relative;
+            z-index: 1;
+            margin-top: 3em;
+        }
+    }
+
+    .contactme{
+        position: relative;
+        background-color: var(--primary-color);
+
+        .section-heading{
+            margin:0;
+        }
+
+        .form-section{
+            position: relative;
+            width: 90vw;
+
+        }
+        
     }
 }
