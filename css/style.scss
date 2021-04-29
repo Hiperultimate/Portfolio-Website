@@ -82,12 +82,13 @@ input, textarea{
     color: white;
     resize: vertical;
     font-family: 'Poppins';
+    font-size: 18px;
+    padding-bottom: 0.1em;
     outline: none;
     width: 100%;
-    padding: 0.8em;
     margin-bottom: 1em;
     border: none;
-    background-color: var(--primary-color);
+    background-color: #242729;
     border-bottom: 1px solid white;
 }
 
@@ -296,9 +297,12 @@ input[type="submit"]{
 }
 
 .aboutme-contact{
+    background-color: var(--primary-color);
+
     .aboutme{
         background-color: var(--primary-color);
-        height: 100vh;
+        height: 100%;
+        min-height: 50em;
         position: relative;
         overflow: hidden;
 
@@ -352,16 +356,60 @@ input[type="submit"]{
 
     .contactme{
         position: relative;
-        background-color: var(--primary-color);
+        height: 55em;
+        overflow: hidden;
 
         .section-heading{
+            position: relative;
             margin:0;
+            z-index: 1;
+            max-height: 50em;
         }
 
+        .heading-bg{
+            position: absolute;
+            top : 4em;
+            background-image: linear-gradient(to right, #312DFF 30%,#45BCFF );;
+            width: 95%;
+            height: 100%;
+            max-height: 47em;
+            transform-origin: bottom left;
+            transform: skew(15deg,0);
+
+        }
+
+        .form-container{
+            position: block;
+            height: auto;
+
+        }
         .form-section{
             position: relative;
-            width: 90vw;
+            width: 90%;
+            background-color: #242729;
+            padding-top: 2em;
 
+            form{
+                position: relative;
+
+                label{
+                    margin-bottom: 2em;
+                }
+
+                input,textarea{
+                    margin-bottom: 3em;
+                }
+
+                input[type="submit"] {
+                    position: absolute;
+                    bottom: -5em;
+                    
+                    
+                }
+    
+            }
+
+            
         }
         
     }
