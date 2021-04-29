@@ -416,4 +416,45 @@ input[type="submit"] {
   position: absolute;
   bottom: -5em;
 }
+
+footer {
+  background-color: #242729;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 0em;
+}
+
+footer .footer-div {
+  text-align: center;
+}
+
+footer .footer-div .footer-logo {
+  height: 5em;
+  width: 5em;
+}
+
+footer .footer-div .footer-social {
+  padding-top: 1em;
+  padding-bottom: 0.8em;
+}
+
+footer .footer-div .footer-social a {
+  padding: 3em;
+  font-weight: 800;
+}
+
+footer .footer-div .footer-social a:visited {
+  color: white;
+}
+
+footer .footer-div p {
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 14px;
+}
 /*# sourceMappingURL=style.css.map */

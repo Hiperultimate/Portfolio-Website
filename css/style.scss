@@ -12,6 +12,7 @@ body{
 
 a {
     text-decoration: none;
+    
 }
 
 h1,h2,p{
@@ -410,6 +411,42 @@ input[type="submit"]{
             }
 
             
+        }
+        
+    }
+}
+
+footer{
+    background-color: #242729;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+    .footer-div{
+        text-align: center;
+
+        .footer-logo{
+            height: 5em;
+            width: 5em;
+        }
+
+        .footer-social{
+            padding-top: 1em;
+            padding-bottom: 0.8em;
+            a{
+                padding: 3em;
+                font-weight: 800;
+            }
+            
+            a:visited{
+                color:white;
+            }
+
+        }
+        
+        p{
+            font-family: 'Raleway';
+            font-weight: 200;
+            font-size: 14px;
         }
         
     }
