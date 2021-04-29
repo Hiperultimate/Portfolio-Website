@@ -120,10 +120,6 @@ input[type="submit"] {
   padding: 1em;
 }
 
-.navbar nav {
-  display: none;
-}
-
 .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,5 +452,54 @@ footer .footer-div p {
   font-family: 'Raleway';
   font-weight: 200;
   font-size: 14px;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  right: -80%;
+  top: 0;
+  width: 80%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0066FF), color-stop(70%, #8A85C2));
+  background-image: linear-gradient(to bottom, #0066FF, #8A85C2 70%);
+  height: 100vh;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+nav ul.nav-menu {
+  list-style-type: none;
+  white-space: nowrap;
+  font-size: 1.7em;
+  margin-top: 20%;
+}
+
+nav ul.nav-menu li {
+  margin: 1em 1em 1em 0em;
+}
+
+nav ul.nav-menu li a:visited {
+  color: white;
+}
+
+nav .exit-button-right {
+  position: relative;
+  text-align: right;
+}
+
+nav .exit-button-right .menu-exit-icon {
+  padding: 28px;
+  cursor: pointer;
+}
+
+nav .mobile-socials {
+  position: fixed;
+  bottom: 0;
+  margin-left: 1em;
+}
+
+nav .mobile-socials img {
+  padding: 1em;
+  height: 3em;
 }
 /*# sourceMappingURL=style.css.map */
