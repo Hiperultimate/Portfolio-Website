@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;700&family=Raleway:wght@200;400;600&display=swap");
 :root {
   --primary-color: #1C1D25;
   --background-color: #F2F2F2;
@@ -27,10 +28,18 @@ h1, h2, p {
   color: white;
   font-family: poppins;
   font-weight: 800;
-  background-image: -webkit-gradient(linear, left top, right top, from(#FF3D00), to(#FFB800));
-  background-image: linear-gradient(to right, #FF3D00, #FFB800);
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF3D00), color-stop(#FFB800), color-stop(#FFB800), to(#FF3D00));
+  background-image: linear-gradient(to right, #FF3D00, #FFB800, #FFB800, #FF3D00);
+  background-size: 300%;
+  background-position: left;
   padding: 0.5em 2em;
   cursor: pointer;
+  -webkit-transition: background-position 0.5s;
+  transition: background-position 0.5s;
+}
+
+.gradient-button:hover, .gradient-button:focus {
+  background-position: 90%;
 }
 
 .section-heading {
@@ -299,6 +308,78 @@ input[type="submit"] {
   margin-right: auto;
 }
 
+.project-page-body {
+  background-color: #F5F5F5;
+}
+
+.project-page-body .navbar {
+  background-color: transparent;
+}
+
+.project-page-body .project-page img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-page-body .project-page .page-content .heading-div {
+  display: block;
+  position: relative;
+  top: 1.5em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-page-body .project-page .page-content .heading-div .main-project-heading {
+  font-family: "Poppins";
+  font-size: 36px;
+  color: black;
+  margin-top: 1.5em;
+  margin-bottom: 0.2em;
+}
+
+.project-page-body .project-page .page-content .heading-div .project-first-img {
+  width: 100%;
+}
+
+.project-page-body .project-page .page-content .project-description {
+  background-color: var(--primary-color);
+  margin-bottom: 10em;
+}
+
+.project-page-body .project-page .page-content .project-description .description-background {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em 0em;
+  width: 90%;
+}
+
+.project-page-body .project-page .page-content .project-description .description-background .center-align-description img {
+  width: 100%;
+  padding: 2em 0em;
+}
+
+.project-page-body .project-page .page-content .project-description .description-background .center-align-description p {
+  font-family: 'Raleway';
+  font-size: 18px;
+  padding-bottom: 2em;
+}
+
+.project-page-body .project-page .page-content .project-description .button-position {
+  display: block;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateY(-0.5em);
+          transform: translateY(-0.5em);
+  margin-right: 1em;
+}
+
+.project-page-body .project-page .page-content .project-description .button-position .gradient-button {
+  padding: 1em 1em;
+}
+
 .aboutme-contact {
   background-color: var(--primary-color);
 }
@@ -454,6 +535,10 @@ footer .footer-div p {
   font-size: 14px;
 }
 
+li a:visited {
+  color: white;
+}
+
 nav {
   position: fixed;
   z-index: 999;
@@ -476,10 +561,6 @@ nav ul.nav-menu {
 
 nav ul.nav-menu li {
   margin: 1em 1em 1em 0em;
-}
-
-nav ul.nav-menu li a:visited {
-  color: white;
 }
 
 nav .exit-button-right {

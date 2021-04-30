@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;700&family=Raleway:wght@200;400;600&display=swap');
+
 :root {
     --primary-color : #1C1D25;
     --background-color : #F2F2F2;
@@ -29,9 +31,16 @@ h1,h2,p{
     color:white;
     font-family: poppins;
     font-weight :800;
-    background-image: linear-gradient(to right,#FF3D00, #FFB800);
+    background-image: linear-gradient(to right,#FF3D00, #FFB800, #FFB800,#FF3D00,  );
+    background-size: 300%;
+    background-position: left;
     padding: 0.5em 2em ;
     cursor: pointer;
+    transition: background-position 0.5s;
+}
+
+.gradient-button:hover, .gradient-button:focus{
+    background-position: 90%;
 }
 
 .section-heading{
@@ -298,6 +307,94 @@ input[type="submit"]{
     }
 }
 
+.project-page-body{
+    background-color: #F5F5F5;
+
+    .navbar{
+        background-color: transparent;
+    }
+    .project-page{
+        // position: relative;
+        // top: 10em;
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-content{
+
+            .heading-div{
+                display: block;
+                position: relative;
+                top: 1.5em;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+
+                .main-project-heading{
+                    font-family: "Poppins";
+                    font-size: 36px;
+                    color: black;
+                    margin-top: 1.5em;
+                    margin-bottom: 0.2em;
+
+                }
+
+                .project-first-img{
+                    width:100%;
+                }
+            }
+
+            .project-description{
+                background-color: var(--primary-color);
+                margin-bottom: 10em;
+                
+
+                .description-background{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                    padding: 3em 0em;
+                    width: 90%;
+                    .center-align-description{
+
+                        img{
+                            width: 100%;
+                            padding: 2em 0em;
+                        }
+
+                        p{
+                            font-family: 'Raleway';
+                            font-size: 18px;
+                            padding-bottom: 2em;
+                        }
+                    }
+                }
+
+                .button-position{
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    transform: translateY(-0.5em);                   
+                    margin-right: 1em;
+
+                    .gradient-button{
+                        padding: 1em 1em;
+                    }
+                    
+                }
+                
+                
+            }
+        }
+        
+    }
+
+    
+}
+
 .aboutme-contact{
     background-color: var(--primary-color);
 
@@ -457,8 +554,11 @@ footer{
 //     display: block;
 // }
 
+li a:visited{
+    color:white;
+}
+
 nav{
-    // display: grid;
     position: fixed;
     z-index: 999;
     right: -80%;
@@ -476,9 +576,7 @@ nav{
         li{
             margin: 1em 1em 1em 0em;
         }
-        li a:visited{
-            color:white;
-        }
+        
         
     }
     .exit-button-right{

@@ -8,17 +8,19 @@
         <title>Project Page</title>
     </head>
 
-    <body>
+    <body class="project-page-body">
         <div class="navbar">
             <div class="container">
-                <a href="#" class="logo">
-                    <img src="img/logo.svg" alt="logo">
+                <a href="#">
+                    <img class="logo" src="img/logo-black.svg" alt="logo">
                 </a>
 
-                <img src="img/menu.svg" class="menu" alt="menu">
+                <img src="img/menu-black.svg" class="menu" id="menu-button" alt="menu">
 
                 <nav>
-                    <img src="img/menu-close.svg" class="menu-exit-icon" alt="exit-icon">
+                    <div class="exit-button-right">
+                        <img src="img/menu-close.svg" class="menu-exit-icon" id="exit-menu-button" alt="exit-icon">
+                    </div>
                     <ul class="nav-menu">
                         <li><a href="#" class="nav-buttons">Home</a></li>
                         <li><a href="#" class="nav-buttons">Projects</a></li>
@@ -26,43 +28,62 @@
                         <li><a href="#" class="nav-buttons">Contact Me</a></li>
                     </ul>
 
-                    <div class="container socials mobile-socials">
-                        <img src="img/github.svg" class="github-logo" alt="logo-github">
-                        <img src="img/linkedin.svg" class="linkedin-logo" alt="logo-linkedin">
+                    <div class="container mobile-socials">
+                        <a href="#"><img src="img/github.svg" class="github-logo" alt="logo-github"> </a>
+                        <a href="#"><img src="img/linkedin.svg" class="linkedin-logo" alt="logo-linkedin"></a>
                     </div>
                 </nav>
             </div>
         </div>
+
+        <section class="project-page">
+            <div class="page-content">
+                
+                <div class="container heading-div">
+                    <p class="main-project-heading">Axcessor</p>
+                    <img class="project-first-img" src="img/test-img.png" alt="project-image">
+                </div>
+    
+                <div class="project-description">
+                    <div class="description-background">
+                        <div class="center-align-description">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam voluptatibus suscipit consectetur nulla ullam, 
+                                odio voluptate molestias consequatur nemo eligendi vitae, quo eveniet. Explicabo iste molestias dicta natus tenetur!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam voluptatibus suscipit consectetur nulla ullam, 
+                                odio voluptate molestias consequatur nemo eligendi vitae, quo eveniet. Explicabo iste molestias dicta natus tenetur!
+                                
+                                <img src="img/test-img.png" alt="project-image">
+            
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam voluptatibus suscipit consectetur nulla ullam, 
+                                odio voluptate molestias consequatur nemo eligendi vitae, quo eveniet. Explicabo iste molestias dicta natus tenetur!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam voluptatibus suscipit consectetur nulla ullam, 
+                                odio voluptate molestias consequatur nemo eligendi vitae, quo eveniet. Explicabo iste molestias dicta natus tenetur!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="button-position">
+                        <a href="index.html" class="gradient-button">Back To Home</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section> 
+
+
+        <footer>
+            <div class="footer-div">
+                <a href="#"><img class="footer-logo" src="img/logo.svg" alt="logo"></a>
+                <div class="footer-social">
+                    <a href="#">Github</a>
+                    <a href="#">Linkedin</a>
+                </div>
+                <p>© 2021 Manak Kumar Singh - VAT 7011311081- Contact</p>
+            </div> 
+        </footer>
+
+        <script src="./scripting/web-script.js"></script>
+    
     </body>
-
-    <section class="project-page">
-        <div class="container">
-            <p class="heading">Axcessor</p>
-            <img src="img/test-img.png">
-            <img src="img/test-img.png">
-        </div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam voluptatibus suscipit consectetur nulla ullam, 
-            odio voluptate molestias consequatur nemo eligendi vitae, quo eveniet. Explicabo iste molestias dicta natus tenetur!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam voluptatibus suscipit consectetur nulla ullam, 
-            odio voluptate molestias consequatur nemo eligendi vitae, quo eveniet. Explicabo iste molestias dicta natus tenetur!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam voluptatibus suscipit consectetur nulla ullam, 
-            odio voluptate molestias consequatur nemo eligendi vitae, quo eveniet. Explicabo iste molestias dicta natus tenetur!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quisquam voluptatibus suscipit consectetur nulla ullam, 
-            odio voluptate molestias consequatur nemo eligendi vitae, quo eveniet. Explicabo iste molestias dicta natus tenetur!
-        </p>
-        <a href="index.html" class="gradient-button">Back To Home</a>
-
-    </section>
-
-
-    <footer>
-        <img class="footer-logo" src="img/logo.svg" alt="logo">
-        <div class="footer-social">
-            <a href="#">Github</a>
-            <a href="#">Linkedin</a>
-        </div>
-        <p>© 2021 Manak Kumar Singh - VAT 7011311081- Contact</p>
-    </footer>
-
 </html>
