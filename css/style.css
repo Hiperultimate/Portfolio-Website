@@ -38,6 +38,10 @@ h1, h2, p {
   transition: background-position 0.5s;
 }
 
+.para-gap {
+  line-height: 1.5em;
+}
+
 .gradient-button:hover, .gradient-button:focus {
   background-position: 90%;
 }
@@ -168,7 +172,7 @@ input[type="submit"] {
 .cover-page .container {
   text-align: left;
   position: relative;
-  padding-bottom: 10em;
+  padding-bottom: 15em;
 }
 
 .cover-page .container .left-col {
@@ -200,11 +204,12 @@ input[type="submit"] {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  left: -0.5em;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  left: 0.5em;
+  bottom: -3em;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
   max-height: auto;
-  max-width: 110%;
+  max-width: 100%;
 }
 
 .cover-page .desktop-socials {
@@ -559,8 +564,6 @@ nav {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0066FF), color-stop(70%, #8A85C2));
   background-image: linear-gradient(to bottom, #0066FF, #8A85C2 70%);
   height: 100vh;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 nav ul.nav-menu {
@@ -586,6 +589,7 @@ nav .exit-button-right .menu-exit-icon {
 
 nav .mobile-socials {
   position: fixed;
+  display: inline;
   bottom: 0;
   margin-left: 1em;
 }
@@ -593,5 +597,89 @@ nav .mobile-socials {
 nav .mobile-socials img {
   padding: 1em;
   height: 3em;
+}
+
+@media only screen and (min-width: 570px) {
+  .cover-page .container {
+    padding-bottom: 15em;
+  }
+  .cover-page .container .img-overflow .desktop-logo {
+    max-width: 85%;
+    left: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu, .menu-exit-icon {
+    display: none;
+  }
+  nav {
+    position: absolute;
+    height: 0;
+    -webkit-transition: none;
+    transition: none;
+    right: 0%;
+    background: none;
+  }
+  nav ul.nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style-type: none;
+    white-space: nowrap;
+    font-size: 1.4em;
+    margin-top: 0%;
+    right: 0;
+  }
+  nav ul.nav-menu li {
+    margin: 1em 1em 1em 0em;
+  }
+  nav .mobile-socials img {
+    display: none;
+  }
+  .cover-page .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    position: relative;
+    padding-bottom: 15em;
+  }
+  .cover-page .container .left-col {
+    display: block;
+    padding-left: none;
+    padding-top: none;
+    height: 0;
+    width: 70%;
+  }
+  .cover-page .container .left-col .sub-head, .cover-page .container .left-col .name {
+    z-index: 1;
+  }
+  .cover-page .container .left-col .hire-button {
+    position: relative;
+    top: 2em;
+    z-index: 1;
+  }
+  .cover-page .container .img-overflow {
+    position: relative;
+    margin-left: none;
+    margin-right: none;
+    margin: none;
+  }
+  .cover-page .container .img-overflow .desktop-logo {
+    width: 50%;
+    left: 1em;
+    display: block;
+    position: relative;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    max-height: auto;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
