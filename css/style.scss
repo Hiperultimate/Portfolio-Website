@@ -314,8 +314,6 @@ input[type="submit"]{
         background-color: transparent;
     }
     .project-page{
-        // position: relative;
-        // top: 10em;
         img{
             display: block;
             margin-left: auto;
@@ -331,6 +329,7 @@ input[type="submit"]{
                 width: 90%;
                 margin-left: auto;
                 margin-right: auto;
+                z-index: 4;
 
                 .main-project-heading{
                     font-family: "Poppins";
@@ -349,7 +348,17 @@ input[type="submit"]{
             .project-description{
                 background-color: var(--primary-color);
                 margin-bottom: 10em;
+                display: block;
+                position: relative;
+                z-index: 3;
                 
+                .background-text{
+                    // display: block;
+                    position: absolute;
+                    bottom: 0;
+                    right:0 ;
+                    z-index: -1;
+                }
 
                 .description-background{
                     display: block;
@@ -395,6 +404,17 @@ input[type="submit"]{
     
 }
 
+.background-text{
+    white-space: nowrap;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 144px;
+    position: absolute;
+    color:#22242C;
+    z-index: 0;
+    right:0;
+}
+
 .aboutme-contact{
     background-color: var(--primary-color);
 
@@ -405,16 +425,7 @@ input[type="submit"]{
         position: relative;
         overflow: hidden;
 
-        .background-text{
-            white-space: nowrap;
-            font-family: 'Poppins';
-            font-weight: 800;
-            font-size: 144px;
-            position: absolute;
-            color:#22242C;
-            z-index: 0;
-            right:0;
-        }
+
 
         .background-text-two{
             z-index: 0;

@@ -329,6 +329,7 @@ input[type="submit"] {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  z-index: 4;
 }
 
 .project-page-body .project-page .page-content .heading-div .main-project-heading {
@@ -346,6 +347,16 @@ input[type="submit"] {
 .project-page-body .project-page .page-content .project-description {
   background-color: var(--primary-color);
   margin-bottom: 10em;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+.project-page-body .project-page .page-content .project-description .background-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .project-page-body .project-page .page-content .project-description .description-background {
@@ -380,6 +391,17 @@ input[type="submit"] {
   padding: 1em 1em;
 }
 
+.background-text {
+  white-space: nowrap;
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 144px;
+  position: absolute;
+  color: #22242C;
+  z-index: 0;
+  right: 0;
+}
+
 .aboutme-contact {
   background-color: var(--primary-color);
 }
@@ -390,17 +412,6 @@ input[type="submit"] {
   min-height: 50em;
   position: relative;
   overflow: hidden;
-}
-
-.aboutme-contact .aboutme .background-text {
-  white-space: nowrap;
-  font-family: 'Poppins';
-  font-weight: 800;
-  font-size: 144px;
-  position: absolute;
-  color: #22242C;
-  z-index: 0;
-  right: 0;
 }
 
 .aboutme-contact .aboutme .background-text-two {
