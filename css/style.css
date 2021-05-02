@@ -194,9 +194,6 @@ input[type="submit"] {
 
 .cover-page .container .img-overflow {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
 }
 
 .cover-page .container .img-overflow .desktop-logo {
@@ -208,7 +205,6 @@ input[type="submit"] {
   bottom: -3em;
   -webkit-transform: scale(1.6);
           transform: scale(1.6);
-  max-height: auto;
   max-width: 100%;
 }
 
@@ -642,44 +638,88 @@ nav .mobile-socials img {
   nav .mobile-socials img {
     display: none;
   }
+  .cover-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 92vh;
+  }
+  .cover-page h1 {
+    font-size: 2.4em;
+  }
+  .cover-page .name {
+    font-size: 1.45em;
+  }
   .cover-page .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: left;
-    position: relative;
-    padding-bottom: 15em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 60%;
+    padding-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
   }
   .cover-page .container .left-col {
-    display: block;
-    padding-left: none;
-    padding-top: none;
-    height: 0;
-    width: 70%;
+    display: contents;
+    height: 0%;
+    padding-top: 0vh;
+    padding-left: 0em;
   }
-  .cover-page .container .left-col .sub-head, .cover-page .container .left-col .name {
+  .cover-page .container .left-col .text-centered {
+    display: inline-block;
+    margin-top: 33vh;
+    margin-bottom: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .cover-page .container .left-col .text-centered .sub-head, .cover-page .container .left-col .text-centered .name {
+    white-space: nowrap;
     z-index: 1;
   }
-  .cover-page .container .left-col .hire-button {
+  .cover-page .container .left-col .text-centered .hire-button {
+    display: inline-block;
     position: relative;
     top: 2em;
     z-index: 1;
   }
   .cover-page .container .img-overflow {
     position: relative;
-    margin-left: none;
-    margin-right: none;
-    margin: none;
+    top: 25%;
+    padding-right: 2em;
+    margin-top: 30%;
+    margin-top: 20vh;
+    margin-bottom: auto;
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   .cover-page .container .img-overflow .desktop-logo {
-    width: 50%;
-    left: 1em;
-    display: block;
+    left: 0em;
+    bottom: 0em;
     position: relative;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    max-height: auto;
+    -webkit-transform: scale(1) translateY(-50%);
+            transform: scale(1) translateY(-50%);
     max-width: 100%;
+  }
+  .cover-page .desktop-socials {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 9em;
+  }
+  .cover-page .desktop-socials img {
+    position: relative;
+    display: block;
+    top: 0;
+    padding-bottom: 1em;
+    height: 3em;
   }
 }
 /*# sourceMappingURL=style.css.map */
