@@ -772,9 +772,7 @@ nav{
             max-width: 500px;
             display: flex;
             flex-direction: column-reverse;
-            border: white;
-            border-style: solid;
-            border-width: 1px;
+
             
             .project-top-section{
                 display: flex;
@@ -820,7 +818,6 @@ nav{
             .mid-section{
                 background-color: #242729;
                 padding : 0;
-
                 
                 .project-img-section{
                     position: relative;
@@ -855,24 +852,48 @@ nav{
                     }
                     
                 }
+
+                .project-para{
+                    text-align: center;
+                    padding: 40px 15px;
+    
+                    p{
+                        text-align: left;
+                        width:100%;
+                        max-width: 500px;
+                        height: auto;
+                        display:block;
+                        margin: 0;
+                    }
+                }
             }
 
     
 
-            .project-para{
-                text-align: center;
-                padding: 40px 15px;
-                p{
-                    text-align: left;
-                    width:100%;
-                    max-width: 500px;
-                    height: auto;
-                    display:block;
-                    margin: 0;
-                }
-            }
+            
             
             
         }
+
+        .project-mini{
+            margin:1px;
+        }
+
+        .project-mini{
+            position: relative;
+            outline-width: 1px;
+            outline-style: solid;
+            outline-color: rgba(255,255,255,0);
+            transition: outline-color 0.3s;
+    
+        }
+    
+        .project-mini:hover{
+            position: relative;
+            outline-color: rgba(255,255,255,1);
+        }
     }
+
+    
+    
 }
