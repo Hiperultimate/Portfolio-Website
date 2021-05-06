@@ -934,9 +934,8 @@ nav{
                     display: inline-block;
                     text-align: center;
                     position: relative;
-                    background-color: #C9C9C9;
                     border-radius: 10px;
-                    width: auto;
+                    width: 60%;
                     z-index: 2;
                     padding: 1em 2em;
                     margin-left: auto;
@@ -950,33 +949,28 @@ nav{
                         .tool-logo{
                             position: relative;
                             z-index: 3;
-                            height: 4em;
-                            width: 4em;   
+                            width: 17%;
                         }
         
                         #css-logo{
                             position: relative;
                             top: -6px;
-                            margin: 0px -5px;
-                            height: 5.9em;
-                            width: 5.9em;
+                            width: 25%;
                         }
 
                         #html-logo{
                             position: relative;
                             top: -6px;
-                            margin: 0px -15px;
-                            height: 5em;
-                            width: 5em;
+                            width: 15%;
                         }
         
                         #django-logo{
                             position: relative;
-                            height: 8em;
-                            width: 8em;
+                            width: 27%;
                         }
 
                         #python-logo{
+                            position: relative;
                             margin: 0px 10px;
                         }
                     }
