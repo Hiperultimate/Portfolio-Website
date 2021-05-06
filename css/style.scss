@@ -415,6 +415,9 @@ input[type="submit"]{
         position: relative;
         overflow: hidden;
 
+        .all-tools{
+            display: none;
+        }
 
 
         .background-text-two{
@@ -759,8 +762,6 @@ nav{
             margin: 0 auto;
             max-width: 90%;
             display: grid;
-            // grid-template-columns: repeat(auto-fill, minmax(375px,1fr) );
-            // grid-template-columns: repeat(auto-fill, minmax(375px,1fr) );
             grid-template-columns: repeat(auto-fit, minmax(375px,1fr) );
             gap: 20px;
         }
@@ -802,9 +803,7 @@ nav{
                     left : 0em;
                     top : 0em;
                     background-image: linear-gradient(to right, #312DFF 30%,#45BCFF );
-                    width: 100%;
-                    // min-width: 0em;
-                    // max-width: 500px;
+
                     min-width: 100%;
                     max-width: 100%;
 
@@ -867,21 +866,16 @@ nav{
                     }
                 }
             }
-
-    
-
-            
-            
             
         }
 
         .project-mini{
-            margin:1px;
+            margin:2px;
         }
 
         .project-mini{
             position: relative;
-            outline-width: 1px;
+            outline-width: 2px;
             outline-style: solid;
             outline-color: rgba(255,255,255,0);
             transition: outline-color 0.3s;
@@ -891,9 +885,126 @@ nav{
         .project-mini:hover{
             position: relative;
             outline-color: rgba(255,255,255,1);
+            transition: outline-color 0.3s;
         }
     }
 
+    .aboutme-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .aboutme{
+            // width: 50vw;
+            overflow: hidden;
+            background-color: var(--primary-color);
+            height: 80%;
+            width: 90%;
+            display: inline-block;
+            flex-direction: column;
+            padding-top: 4em;
+            padding-left: 3em;
+
+            border: 2px solid white;
+
+            h1,p{
+                color:white;
+            }
+
+            .background-text{
+                color: #22242C;
+                font-size: 188px;
+            }
+
+            .aboutme-img{
+                width: 50%;
+            }
+
+            .content{
+                width: 50%;
+            }
+
+            .tool-width{
+                display: block;
+                justify-content: left;
+                width: 50%;
+                padding-left: 2em;
+
+                .all-tools{
+                    display: inline-block;
+                    text-align: center;
+                    position: relative;
+                    background-color: #C9C9C9;
+                    border-radius: 10px;
+                    width: auto;
+                    z-index: 2;
+                    padding: 1em 2em;
+                    margin-left: auto;
+                    margin-right: auto;
     
+                    .center-tools{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
     
+                        .tool-logo{
+                            position: relative;
+                            z-index: 3;
+                            height: 4em;
+                            width: 4em;   
+                        }
+        
+                        #css-logo{
+                            position: relative;
+                            top: -6px;
+                            margin: 0px -5px;
+                            height: 5.9em;
+                            width: 5.9em;
+                        }
+
+                        #html-logo{
+                            position: relative;
+                            top: -6px;
+                            margin: 0px -15px;
+                            height: 5em;
+                            width: 5em;
+                        }
+        
+                        #django-logo{
+                            position: relative;
+                            height: 8em;
+                            width: 8em;
+                        }
+
+                        #python-logo{
+                            margin: 0px 10px;
+                        }
+                    }
+    
+                    
+                }
+            }
+
+            
+
+            .contact-button{
+                // display: none;
+            }
+        }
+
+        .aboutme:hover{
+
+        }
+
+        .contactme{
+            
+            width: 70%;
+
+            .heading-bg{
+                // display: none;
+                width: 50%;
+            }
+        }
+    }
+
 }

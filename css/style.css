@@ -407,6 +407,10 @@ input[type="submit"] {
   overflow: hidden;
 }
 
+.aboutme-contact .aboutme .all-tools {
+  display: none;
+}
+
 .aboutme-contact .aboutme .background-text-two {
   z-index: 0;
   bottom: 0;
@@ -766,7 +770,6 @@ nav .mobile-socials img {
     top: 0em;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312DFF), to(#45BCFF));
     background-image: linear-gradient(to right, #312DFF 30%, #45BCFF);
-    width: 100%;
     min-width: 100%;
     max-width: 100%;
     height: 5em;
@@ -822,11 +825,11 @@ nav .mobile-socials img {
     margin: 0;
   }
   .projects-section .project-mini {
-    margin: 1px;
+    margin: 2px;
   }
   .projects-section .project-mini {
     position: relative;
-    outline-width: 1px;
+    outline-width: 2px;
     outline-style: solid;
     outline-color: rgba(255, 255, 255, 0);
     -webkit-transition: outline-color 0.3s;
@@ -835,6 +838,112 @@ nav .mobile-socials img {
   .projects-section .project-mini:hover {
     position: relative;
     outline-color: white;
+    -webkit-transition: outline-color 0.3s;
+    transition: outline-color 0.3s;
+  }
+  .aboutme-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutme-contact .aboutme {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    height: 80%;
+    width: 90%;
+    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 4em;
+    padding-left: 3em;
+    border: 2px solid white;
+  }
+  .aboutme-contact .aboutme h1, .aboutme-contact .aboutme p {
+    color: white;
+  }
+  .aboutme-contact .aboutme .background-text {
+    color: #22242C;
+    font-size: 188px;
+  }
+  .aboutme-contact .aboutme .aboutme-img {
+    width: 50%;
+  }
+  .aboutme-contact .aboutme .content {
+    width: 50%;
+  }
+  .aboutme-contact .aboutme .tool-width {
+    display: block;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 50%;
+    padding-left: 2em;
+  }
+  .aboutme-contact .aboutme .tool-width .all-tools {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    background-color: #C9C9C9;
+    border-radius: 10px;
+    width: auto;
+    z-index: 2;
+    padding: 1em 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutme-contact .aboutme .tool-width .all-tools .center-tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutme-contact .aboutme .tool-width .all-tools .center-tools .tool-logo {
+    position: relative;
+    z-index: 3;
+    height: 4em;
+    width: 4em;
+  }
+  .aboutme-contact .aboutme .tool-width .all-tools .center-tools #css-logo {
+    position: relative;
+    top: -6px;
+    margin: 0px -5px;
+    height: 5.9em;
+    width: 5.9em;
+  }
+  .aboutme-contact .aboutme .tool-width .all-tools .center-tools #html-logo {
+    position: relative;
+    top: -6px;
+    margin: 0px -15px;
+    height: 5em;
+    width: 5em;
+  }
+  .aboutme-contact .aboutme .tool-width .all-tools .center-tools #django-logo {
+    position: relative;
+    height: 8em;
+    width: 8em;
+  }
+  .aboutme-contact .aboutme .tool-width .all-tools .center-tools #python-logo {
+    margin: 0px 10px;
+  }
+  .aboutme-contact .contactme {
+    width: 70%;
+  }
+  .aboutme-contact .contactme .heading-bg {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
