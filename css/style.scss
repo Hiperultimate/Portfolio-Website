@@ -125,6 +125,9 @@ input[type="submit"]{
 .navbar{
     background-color: var(--primary-color);
     padding: 1em;
+    position: relative;
+    width: auto;
+    z-index: 3;
 
     .container{
         display: flex;
@@ -143,7 +146,6 @@ input[type="submit"]{
     background-color: var(--primary-color);
     min-height: 568px;
     overflow: hidden;
-    
 
     h1,p,a {
         color: white;
@@ -512,6 +514,21 @@ input[type="submit"]{
     
             }
 
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus,
+            textarea:-webkit-autofill,
+            textarea:-webkit-autofill:hover,
+            textarea:-webkit-autofill:focus,
+            select:-webkit-autofill,
+            select:-webkit-autofill:hover,
+            select:-webkit-autofill:focus {
+            // border: 1px solid green;
+            -webkit-text-fill-color: white;
+            -webkit-box-shadow: 0 0 0px 1000px #242729 inset;
+            transition: background-color 5000s ease-in-out 0s;
+            }
+
             
         }
         
@@ -629,8 +646,16 @@ nav{
         font-size: 54px;
     }
 
+    .navbar{
+        padding: 0;
+    }
+    
+    .logo{
+        padding: 1em;
+    }
+
     nav{
-        position: absolute;
+        position: relative;
         height: 0;
         transition: none;
         right: 0%;
@@ -638,15 +663,13 @@ nav{
 
         ul.nav-menu{
             display: flex;
-            position: absolute;
-            flex-direction: row;
-            list-style-type: none;
-            white-space: nowrap;
+            position: relative;
             font-size: 1.4em;
             margin-top: 0%;
-            right: 0;
+            float: right;
+            padding-right: 0.6em;
             li{
-                margin: 1em 1em 1em 0em;
+                margin: 1.3em 0.6em;
             }
         }
 
@@ -1039,20 +1062,7 @@ nav{
                         right: -3%;
                     }
 
-                    input:-webkit-autofill,
-                    input:-webkit-autofill:hover, 
-                    input:-webkit-autofill:focus,
-                    textarea:-webkit-autofill,
-                    textarea:-webkit-autofill:hover,
-                    textarea:-webkit-autofill:focus,
-                    select:-webkit-autofill,
-                    select:-webkit-autofill:hover,
-                    select:-webkit-autofill:focus {
-                    // border: 1px solid green;
-                    -webkit-text-fill-color: white;
-                    -webkit-box-shadow: 0 0 0px 1000px #242729 inset;
-                    transition: background-color 5000s ease-in-out 0s;
-                    }
+                    
                 }
             }
         }

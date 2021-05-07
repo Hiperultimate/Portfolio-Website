@@ -131,6 +131,9 @@ input[type="submit"] {
 .navbar {
   background-color: var(--primary-color);
   padding: 1em;
+  position: relative;
+  width: auto;
+  z-index: 3;
 }
 
 .navbar .container {
@@ -502,6 +505,21 @@ input[type="submit"] {
   bottom: -5em;
 }
 
+.aboutme-contact .contactme .form-section input:-webkit-autofill,
+.aboutme-contact .contactme .form-section input:-webkit-autofill:hover,
+.aboutme-contact .contactme .form-section input:-webkit-autofill:focus,
+.aboutme-contact .contactme .form-section textarea:-webkit-autofill,
+.aboutme-contact .contactme .form-section textarea:-webkit-autofill:hover,
+.aboutme-contact .contactme .form-section textarea:-webkit-autofill:focus,
+.aboutme-contact .contactme .form-section select:-webkit-autofill,
+.aboutme-contact .contactme .form-section select:-webkit-autofill:hover,
+.aboutme-contact .contactme .form-section select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #242729 inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 footer {
   background-color: #242729;
   display: -webkit-box;
@@ -608,8 +626,14 @@ nav .mobile-socials img {
   .section-heading {
     font-size: 54px;
   }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    padding: 1em;
+  }
   nav {
-    position: absolute;
+    position: relative;
     height: 0;
     -webkit-transition: none;
     transition: none;
@@ -620,19 +644,14 @@ nav .mobile-socials img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    list-style-type: none;
-    white-space: nowrap;
+    position: relative;
     font-size: 1.4em;
     margin-top: 0%;
-    right: 0;
+    float: right;
+    padding-right: 0.6em;
   }
   nav ul.nav-menu li {
-    margin: 1em 1em 1em 0em;
+    margin: 1.3em 0.6em;
   }
   nav .mobile-socials img {
     display: none;
@@ -982,20 +1001,6 @@ nav .mobile-socials img {
     position: absolute;
     bottom: -3%;
     right: -3%;
-  }
-  .aboutme-contact .contactme .form-container .form-section input:-webkit-autofill,
-  .aboutme-contact .contactme .form-container .form-section input:-webkit-autofill:hover,
-  .aboutme-contact .contactme .form-container .form-section input:-webkit-autofill:focus,
-  .aboutme-contact .contactme .form-container .form-section textarea:-webkit-autofill,
-  .aboutme-contact .contactme .form-container .form-section textarea:-webkit-autofill:hover,
-  .aboutme-contact .contactme .form-container .form-section textarea:-webkit-autofill:focus,
-  .aboutme-contact .contactme .form-container .form-section select:-webkit-autofill,
-  .aboutme-contact .contactme .form-container .form-section select:-webkit-autofill:hover,
-  .aboutme-contact .contactme .form-container .form-section select:-webkit-autofill:focus {
-    -webkit-text-fill-color: white;
-    -webkit-box-shadow: 0 0 0px 1000px #242729 inset;
-    -webkit-transition: background-color 5000s ease-in-out 0s;
-    transition: background-color 5000s ease-in-out 0s;
   }
 }
 /*# sourceMappingURL=style.css.map */
