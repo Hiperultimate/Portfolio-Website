@@ -865,7 +865,10 @@ nav .mobile-socials img {
             flex-direction: column;
     padding-top: 4em;
     padding-left: 3em;
-    border: 2px solid white;
+    margin-bottom: 10em;
+    border: 2px solid rgba(255, 255, 255, 0);
+    -webkit-transition: border-color 300ms;
+    transition: border-color 300ms;
   }
   .aboutme-contact .aboutme h1, .aboutme-contact .aboutme p {
     color: white;
@@ -880,6 +883,10 @@ nav .mobile-socials img {
   .aboutme-contact .aboutme .content {
     width: 50%;
   }
+  .aboutme-contact .aboutme .content .para-gap {
+    font-size: 18px;
+    padding-top: 4em;
+  }
   .aboutme-contact .aboutme .tool-width {
     display: block;
     -webkit-box-pack: left;
@@ -887,6 +894,7 @@ nav .mobile-socials img {
             justify-content: left;
     width: 50%;
     padding-left: 2em;
+    padding-top: 4em;
   }
   .aboutme-contact .aboutme .tool-width .all-tools {
     display: inline-block;
@@ -895,7 +903,7 @@ nav .mobile-socials img {
     border-radius: 10px;
     width: 60%;
     z-index: 2;
-    padding: 1em 2em;
+    padding: 1em 0.5em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -933,11 +941,61 @@ nav .mobile-socials img {
     position: relative;
     margin: 0px 10px;
   }
+  .aboutme-contact .aboutme .contact-button {
+    padding: 0;
+    margin: 1.5em;
+  }
+  .aboutme-contact .aboutme:hover {
+    border-color: white;
+  }
   .aboutme-contact .contactme {
     width: 70%;
+    margin-bottom: 5em;
+    max-width: 1000px;
+  }
+  .aboutme-contact .contactme .section-heading {
+    text-align: center;
   }
   .aboutme-contact .contactme .heading-bg {
     width: 50%;
+  }
+  .aboutme-contact .contactme .form-container {
+    height: 10%;
+    margin-top: 3em;
+  }
+  .aboutme-contact .contactme .form-container .heading-bg {
+    width: 70%;
+    height: 81%;
+    top: 7.7em;
+  }
+  .aboutme-contact .contactme .form-container .form-section {
+    margin-left: 1.5em;
+  }
+  .aboutme-contact .contactme .form-container .form-section form {
+    padding-bottom: 5em;
+  }
+  .aboutme-contact .contactme .form-container .form-section input, .aboutme-contact .contactme .form-container .form-section textarea {
+    margin-bottom: 2em;
+    resize: none;
+  }
+  .aboutme-contact .contactme .form-container .form-section input[type="submit"] {
+    position: absolute;
+    bottom: -3%;
+    right: -3%;
+  }
+  .aboutme-contact .contactme .form-container .form-section input:-webkit-autofill,
+  .aboutme-contact .contactme .form-container .form-section input:-webkit-autofill:hover,
+  .aboutme-contact .contactme .form-container .form-section input:-webkit-autofill:focus,
+  .aboutme-contact .contactme .form-container .form-section textarea:-webkit-autofill,
+  .aboutme-contact .contactme .form-container .form-section textarea:-webkit-autofill:hover,
+  .aboutme-contact .contactme .form-container .form-section textarea:-webkit-autofill:focus,
+  .aboutme-contact .contactme .form-container .form-section select:-webkit-autofill,
+  .aboutme-contact .contactme .form-container .form-section select:-webkit-autofill:hover,
+  .aboutme-contact .contactme .form-container .form-section select:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px #242729 inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
   }
 }
 /*# sourceMappingURL=style.css.map */
