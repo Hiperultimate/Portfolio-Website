@@ -312,9 +312,17 @@ input[type="submit"]{
     background-color: #F5F5F5;
 
     .navbar{
-        background-color: transparent;
+        background-color: #F5F5F5;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+
+        #menu-button{
+            padding-right: 2em;
+        }
     }
     .project-page{
+        padding-top: 84px;
         img{
             display: block;
             margin-left: auto;
@@ -331,6 +339,9 @@ input[type="submit"]{
                 margin-left: auto;
                 margin-right: auto;
                 z-index: 4;
+                .main-project-heading{
+                    color: black;
+                }
 
                 .project-first-img{
                     width:100%;
@@ -369,7 +380,8 @@ input[type="submit"]{
                         p{
                             font-family: 'Raleway';
                             font-size: 18px;
-                            padding-bottom: 2em;
+                            padding : 2em 0em;
+                            margin: 0;
                         }
                     }
                 }
@@ -523,7 +535,6 @@ input[type="submit"]{
             select:-webkit-autofill,
             select:-webkit-autofill:hover,
             select:-webkit-autofill:focus {
-            // border: 1px solid green;
             -webkit-text-fill-color: white;
             -webkit-box-shadow: 0 0 0px 1000px #242729 inset;
             transition: background-color 5000s ease-in-out 0s;
@@ -617,6 +628,16 @@ nav{
             height: 3em;
         }
     
+    }
+}
+
+@keyframes nav-bar-animation{
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0%);
     }
 }
 
@@ -1068,4 +1089,22 @@ nav{
         }
     }
 
+    .project-page-body{
+        background-color: #F5F5F5;
+    
+        .navbar{
+            background-color: #F5F5F5;
+            position: fixed;
+            width: 100%;
+            z-index: 5;
+
+            nav{
+                position: unset;
+            }
+    
+            .nav-buttons{
+                color: black;
+            }
+        }
+    }
 }

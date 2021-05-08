@@ -317,7 +317,18 @@ input[type="submit"] {
 }
 
 .project-page-body .navbar {
-  background-color: transparent;
+  background-color: #F5F5F5;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.project-page-body .navbar #menu-button {
+  padding-right: 2em;
+}
+
+.project-page-body .project-page {
+  padding-top: 84px;
 }
 
 .project-page-body .project-page img {
@@ -334,6 +345,10 @@ input[type="submit"] {
   margin-left: auto;
   margin-right: auto;
   z-index: 4;
+}
+
+.project-page-body .project-page .page-content .heading-div .main-project-heading {
+  color: black;
 }
 
 .project-page-body .project-page .page-content .heading-div .project-first-img {
@@ -371,7 +386,8 @@ input[type="submit"] {
 .project-page-body .project-page .page-content .project-description .description-background .center-align-description p {
   font-family: 'Raleway';
   font-size: 18px;
-  padding-bottom: 2em;
+  padding: 2em 0em;
+  margin: 0;
 }
 
 .project-page-body .project-page .page-content .project-description .button-position {
@@ -607,6 +623,28 @@ nav .mobile-socials {
 nav .mobile-socials img {
   padding: 1em;
   height: 3em;
+}
+
+@-webkit-keyframes nav-bar-animation {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes nav-bar-animation {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 @media only screen and (min-width: 570px) {
@@ -1001,6 +1039,21 @@ nav .mobile-socials img {
     position: absolute;
     bottom: -3%;
     right: -3%;
+  }
+  .project-page-body {
+    background-color: #F5F5F5;
+  }
+  .project-page-body .navbar {
+    background-color: #F5F5F5;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .project-page-body .navbar nav {
+    position: unset;
+  }
+  .project-page-body .navbar .nav-buttons {
+    color: black;
   }
 }
 /*# sourceMappingURL=style.css.map */

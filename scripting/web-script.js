@@ -20,11 +20,13 @@ mobileBtnExit.addEventListener('click', () => {
 
 window.addEventListener("scroll", function(){
     if(window.scrollY >= cover_page.offsetHeight){
+        console.log("activated");
         nav_bar.style.position = "fixed";
         nav_bar.style.width ="100%";
         menu_button.style.paddingRight = "2em";
         cover_page.style.paddingTop ="84px";
         nav_bar.style.borderBottom = "2px solid white";
+        nav_bar.style.animation = "nav-bar-animation 300ms ease-out 0ms 1"
     }
 
     if(window.scrollY < cover_page.offsetHeight){
@@ -33,6 +35,7 @@ window.addEventListener("scroll", function(){
         menu_button.style.paddingRight = "0em";
         cover_page.style.paddingTop ="0px";
         nav_bar.style.borderBottom = "0px solid white";
+        nav_bar.style.animation ="none";
     }
 })
 
