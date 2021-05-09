@@ -39,4 +39,15 @@ window.addEventListener("scroll", function(){
     }
 })
 
-console.log(cover_page.offsetHeight);
+// var x = window.matchMedia("(min-width: 768px)")
+
+// if(matchMedia){
+//     const win_size = window.matchMedia("(max-width: 768px)");
+//     win_size.addEventListener("event",NavReset);
+//     NavReset();
+// }
+
+// function NavReset(){
+//     nav.style.right = "0%" ;
+//     console.log("Working");
+// }

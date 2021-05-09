@@ -586,16 +586,6 @@ li a:visited {
   color: white;
 }
 
-.nav-buttons::after {
-  content: "";
-  display: block;
-  position: relative;
-  height: 0.175rem;
-  width: 100%;
-  background-color: white;
-  bottom: 0;
-}
-
 nav {
   position: fixed;
   z-index: 999;
@@ -616,33 +606,6 @@ nav ul.nav-menu {
 
 nav ul.nav-menu li {
   margin: 1em 1em 1em 0em;
-}
-
-nav ul.nav-menu .btn::after {
-  content: "";
-  display: block;
-  position: relative;
-  height: 0.175rem;
-  width: 100%;
-  background-color: white;
-  bottom: 0;
-  margin-top: 5px;
-}
-
-nav ul.nav-menu .nav-buttons::after {
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-}
-
-nav ul.nav-menu .nav-buttons:hover::after {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
 }
 
 nav .exit-button-right {
@@ -733,6 +696,30 @@ nav .mobile-socials img {
   nav ul.nav-menu li {
     margin: 1.3em 0.6em;
   }
+  nav .btn::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 0.175rem;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    margin-top: 5px;
+  }
+  nav .nav-buttons::after {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  }
+  nav .nav-buttons:hover::after {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
   nav .mobile-socials img {
     display: none;
   }
@@ -822,6 +809,10 @@ nav .mobile-socials img {
   .projects-section {
     overflow: hidden;
     background-color: var(--primary-color);
+  }
+  .projects-section .section-heading {
+    margin-left: auto;
+    margin-right: auto;
   }
   .projects-section .project-grid {
     margin: 0 auto;
