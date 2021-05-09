@@ -20,6 +20,16 @@ mobileBtnExit.addEventListener('click', () => {
     nav.style.right = "-80%" ;
 });
 
-// for(var i = 0; i < image_list.length; i++){
-//     desktop_images.appendChild(image_list[i]);
-// }
+
+const mediaQuery = '(max-width: 767px)';
+
+window.matchMedia(mediaQuery).addEventListener('change', event => {
+  if (event.matches) {
+    nav.style.transition ="none";
+    nav.style.right = "-80%" ;
+  } 
+  else {
+    nav.style.transition ="none";
+    nav.style.right = "0%" ;
+  }
+})

@@ -5,6 +5,10 @@
   --grad-color: linear-gradient(to right, #312DFF,#45BCFF);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background-color);
   margin: 0;
@@ -470,6 +474,68 @@ input[type="submit"] {
   margin-top: 3em;
 }
 
+.aboutme-contact .aboutme .tool-width {
+  display: block;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 100%;
+  padding-left: 2.5em;
+  padding-top: 2em;
+}
+
+.aboutme-contact .aboutme .tool-width .all-tools {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  width: 60%;
+  z-index: 2;
+  padding: 1em 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutme-contact .aboutme .tool-width .all-tools .center-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutme-contact .aboutme .tool-width .all-tools .center-tools .tool-logo {
+  position: relative;
+  z-index: 3;
+  width: 17%;
+}
+
+.aboutme-contact .aboutme .tool-width .all-tools .center-tools #css-logo {
+  position: relative;
+  top: -6px;
+  width: 25%;
+}
+
+.aboutme-contact .aboutme .tool-width .all-tools .center-tools #html-logo {
+  position: relative;
+  top: -6px;
+  width: 15%;
+}
+
+.aboutme-contact .aboutme .tool-width .all-tools .center-tools #django-logo {
+  position: relative;
+  width: 27%;
+}
+
+.aboutme-contact .aboutme .tool-width .all-tools .center-tools #python-logo {
+  position: relative;
+  margin: 0px 10px;
+}
+
 .aboutme-contact .contactme {
   position: relative;
   height: 55em;
@@ -488,8 +554,8 @@ input[type="submit"] {
   top: 4em;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312DFF), to(#45BCFF));
   background-image: linear-gradient(to right, #312DFF 30%, #45BCFF);
-  width: 95%;
-  height: 100%;
+  width: 80%;
+  height: 83%;
   max-height: 47em;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
@@ -688,13 +754,13 @@ nav .mobile-socials img {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 0%;
     float: right;
     padding-right: 0.6em;
   }
   nav ul.nav-menu li {
-    margin: 1.3em 0.6em;
+    margin: 1.6em 0.6em;
   }
   nav .btn::after {
     content: "";
@@ -816,7 +882,7 @@ nav .mobile-socials img {
   }
   .projects-section .project-grid {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 75%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(375px, 1fr))[auto-fit];
@@ -904,7 +970,7 @@ nav .mobile-socials img {
   }
   .projects-section .project-mini .mid-section .project-para {
     text-align: center;
-    padding: 40px 15px;
+    padding: 40px 25px;
   }
   .projects-section .project-mini .mid-section .project-para p {
     text-align: left;
@@ -944,6 +1010,8 @@ nav .mobile-socials img {
             align-items: center;
   }
   .aboutme-contact .aboutme {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
     overflow: hidden;
     background-color: var(--primary-color);
     height: 80%;
@@ -987,49 +1055,7 @@ nav .mobile-socials img {
     padding-top: 4em;
   }
   .aboutme-contact .aboutme .tool-width .all-tools {
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    border-radius: 10px;
-    width: 60%;
-    z-index: 2;
-    padding: 1em 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .aboutme-contact .aboutme .tool-width .all-tools .center-tools {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .aboutme-contact .aboutme .tool-width .all-tools .center-tools .tool-logo {
-    position: relative;
-    z-index: 3;
-    width: 17%;
-  }
-  .aboutme-contact .aboutme .tool-width .all-tools .center-tools #css-logo {
-    position: relative;
-    top: -6px;
-    width: 25%;
-  }
-  .aboutme-contact .aboutme .tool-width .all-tools .center-tools #html-logo {
-    position: relative;
-    top: -6px;
-    width: 15%;
-  }
-  .aboutme-contact .aboutme .tool-width .all-tools .center-tools #django-logo {
-    position: relative;
-    width: 27%;
-  }
-  .aboutme-contact .aboutme .tool-width .all-tools .center-tools #python-logo {
-    position: relative;
-    margin: 0px 10px;
+    width: 70%;
   }
   .aboutme-contact .aboutme .contact-button {
     padding: 0;
@@ -1039,6 +1065,8 @@ nav .mobile-socials img {
     border-color: white;
   }
   .aboutme-contact .contactme {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
     width: 70%;
     margin-bottom: 5em;
     max-width: 1000px;
@@ -1191,6 +1219,15 @@ nav .mobile-socials img {
     font-family: 'Raleway';
     font-weight: 200;
     font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar .container nav .nav-menu {
+    font-size: 1.4em;
+  }
+  .navbar .container nav .nav-menu li {
+    margin: 1.3em 0.6em;
   }
 }
 /*# sourceMappingURL=style.css.map */

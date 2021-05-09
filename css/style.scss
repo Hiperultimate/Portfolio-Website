@@ -6,6 +6,10 @@
     --grad-color : linear-gradient(to right, #312DFF,#45BCFF);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--background-color);
     margin: 0;
@@ -474,6 +478,62 @@ input[type="submit"]{
             z-index: 1;
             margin-top: 3em;
         }
+
+        .tool-width{
+            display: block;
+            justify-content: left;
+            width: 100%;
+            padding-left: 2.5em;
+            padding-top: 2em;
+
+            .all-tools{
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                border-radius: 10px;
+                width: 60%;
+                z-index: 2;
+                padding: 1em 0.5em;
+                margin-left: auto;
+                margin-right: auto;
+
+                .center-tools{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .tool-logo{
+                        position: relative;
+                        z-index: 3;
+                        width: 17%;
+                    }
+    
+                    #css-logo{
+                        position: relative;
+                        top: -6px;
+                        width: 25%;
+                    }
+
+                    #html-logo{
+                        position: relative;
+                        top: -6px;
+                        width: 15%;
+                    }
+    
+                    #django-logo{
+                        position: relative;
+                        width: 27%;
+                    }
+
+                    #python-logo{
+                        position: relative;
+                        margin: 0px 10px;
+                    }
+                }
+
+                
+            }
+        }
     }
 
     .contactme{
@@ -492,8 +552,8 @@ input[type="submit"]{
             position: absolute;
             top : 4em;
             background-image: linear-gradient(to right, #312DFF 30%,#45BCFF );
-            width: 95%;
-            height: 100%;
+            width: 80%;
+            height: 83%;
             max-height: 47em;
             transform-origin: bottom left;
             transform: skew(15deg,0);
@@ -693,12 +753,12 @@ nav{
         ul.nav-menu{
             display: flex;
             position: relative;
-            font-size: 1.4em;
+            font-size: 1.2em;
             margin-top: 0%;
             float: right;
             padding-right: 0.6em;
             li{
-                margin: 1.3em 0.6em;
+                margin: 1.6em 0.6em;
             }
         }
 
@@ -736,7 +796,7 @@ nav{
         margin-top: auto;
         margin-bottom: auto;
         height: 92vh;
-
+        
         h1{
             font-size: 2.4em;
         }
@@ -754,7 +814,7 @@ nav{
 
             margin-left: auto;
             margin-right: auto;
-
+            
             
 
             .left-col {
@@ -835,7 +895,8 @@ nav{
 
         .project-grid{
             margin: 0 auto;
-            max-width: 90%;
+            // max-width: 90%;
+            max-width: 75%;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(375px,1fr) );
             gap: 20px;
@@ -927,7 +988,7 @@ nav{
 
                 .project-para{
                     text-align: center;
-                    padding: 40px 15px;
+                    padding: 40px 25px;
     
                     p{
                         text-align: left;
@@ -968,7 +1029,7 @@ nav{
         align-items: center;
 
         .aboutme{
-            // width: 50vw;
+            transform: scale(0.9);
             overflow: hidden;
             background-color: var(--primary-color);
             height: 80%;
@@ -981,6 +1042,7 @@ nav{
 
             border: 2px solid rgba(255,255,255,0);
             transition: border-color 300ms;
+            
 
             h1,p{
                 color:white;
@@ -1011,52 +1073,8 @@ nav{
                 padding-left: 2em;
                 padding-top: 4em;
 
-                .all-tools{
-                    display: inline-block;
-                    text-align: center;
-                    position: relative;
-                    border-radius: 10px;
-                    width: 60%;
-                    z-index: 2;
-                    padding: 1em 0.5em;
-                    margin-left: auto;
-                    margin-right: auto;
-    
-                    .center-tools{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-    
-                        .tool-logo{
-                            position: relative;
-                            z-index: 3;
-                            width: 17%;
-                        }
-        
-                        #css-logo{
-                            position: relative;
-                            top: -6px;
-                            width: 25%;
-                        }
-
-                        #html-logo{
-                            position: relative;
-                            top: -6px;
-                            width: 15%;
-                        }
-        
-                        #django-logo{
-                            position: relative;
-                            width: 27%;
-                        }
-
-                        #python-logo{
-                            position: relative;
-                            margin: 0px 10px;
-                        }
-                    }
-    
-                    
+                .all-tools{            
+                    width: 70%;
                 }
             }
 
@@ -1074,7 +1092,7 @@ nav{
         }
 
         .contactme{
-            
+            transform: scale(0.9);
             width: 70%;
             margin-bottom: 5em;
             max-width: 1000px;
@@ -1236,6 +1254,21 @@ nav{
                 font-size: 14px;
             }
             
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .navbar{
+        .container{
+            nav{
+                .nav-menu{
+                    font-size: 1.4em;
+                    li{
+                        margin: 1.3em 0.6em;
+                    }
+                }
+            }
         }
     }
 }

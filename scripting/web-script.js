@@ -11,12 +11,12 @@ cover_page = document.getElementById('cover-page');
     
 mobileBtn.addEventListener('click', () => {
     nav.style.right = "0%" ;
-    nav.style.transition = "0.4s";      //Fixes the navbar transition animation on resizing the screen
+    nav.style.transition = "right 0.4s";      //Fixes the navbar transition animation on resizing the screen
 });
 
 mobileBtnExit.addEventListener('click', () => {
     nav.style.right = "-80%" ;
-    nav.style.transition = "0.4s"; 
+    nav.style.transition = "right 0.4s"; 
 });
 
 window.addEventListener("scroll", function(){
@@ -51,4 +51,26 @@ window.matchMedia(mediaQuery).addEventListener('change', event => {
     nav.style.transition ="none";
     nav.style.right = "0%" ;
   }
+})
+
+
+window.matchMedia(mediaQuery).addEventListener('change', event => {
+    if (event.matches) {
+        console.log(document.getElementsByClassName("nav-buttons"));
+        document.querySelectorAll('.nav-buttons').forEach(element => {
+            element.addEventListener("click",function(){
+                console.log("Clicking");
+                nav.style.right = "-80%" ;
+            })
+        });
+    } 
+    else {
+        console.log(document.getElementsByClassName("nav-buttons"));
+        document.querySelectorAll('.nav-buttons').forEach(element => {
+            element.addEventListener("click",function(){
+                console.log("Clicking");
+                nav.style.right = "0%" ;
+            })
+        });
+    }
 })
