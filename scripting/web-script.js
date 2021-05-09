@@ -16,6 +16,7 @@ mobileBtn.addEventListener('click', () => {
 
 mobileBtnExit.addEventListener('click', () => {
     nav.style.right = "-80%" ;
+    nav.style.transition = "0.4s"; 
 });
 
 window.addEventListener("scroll", function(){
@@ -39,15 +40,15 @@ window.addEventListener("scroll", function(){
     }
 })
 
-// var x = window.matchMedia("(min-width: 768px)")
+const mediaQuery = '(max-width: 767px)';
 
-// if(matchMedia){
-//     const win_size = window.matchMedia("(max-width: 768px)");
-//     win_size.addEventListener("event",NavReset);
-//     NavReset();
-// }
-
-// function NavReset(){
-//     nav.style.right = "0%" ;
-//     console.log("Working");
-// }
+window.matchMedia(mediaQuery).addEventListener('change', event => {
+  if (event.matches) {
+    nav.style.transition ="none";
+    nav.style.right = "-80%" ;
+  } 
+  else {
+    nav.style.transition ="none";
+    nav.style.right = "0%" ;
+  }
+})

@@ -600,7 +600,6 @@ nav{
     width: 80%;
     background-image: linear-gradient(to bottom, #0066FF, #8A85C2 70%);
     height: 100vh;
-    // transition: 0.4s;
 
     ul.nav-menu{
         list-style-type: none;
@@ -828,12 +827,10 @@ nav{
     .projects-section{
         overflow: hidden;
         background-color: var(--primary-color);
-        // padding-bottom : 10em;
 
         .section-heading{
             margin-left: auto;
             margin-right: auto;
-            // margin: 0 auto;
         }
 
         .project-grid{
@@ -864,10 +861,8 @@ nav{
                     z-index: 1;
                     position: relative;
                     left: -55px;
-                    // left: auto;
                     padding: 0;
                     margin: 0;
-                    // display: none;
 
                 }
 
