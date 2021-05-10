@@ -1,13 +1,16 @@
 const mobileBtn = document.getElementById("menu-button")
     nav = document.querySelector('nav')
-    mobileBtnExit = document.getElementById("exit-menu-button");
-    gradButton = document.getElementsByClassName("gradient-button");
-    
+    mobileBtnExit = document.getElementById("exit-menu-button")
+    gradButton = document.getElementsByClassName("gradient-button")
 ;
 
 var nav_bar = document.getElementById('navbar')
 menu_button = document.getElementById("menu-button")
-cover_page = document.getElementById('cover-page');
+cover_page = document.getElementById('cover-page')
+page_top = document.getElementById("page-top")
+nav_location = document.getElementById("nav-location")
+nav_buttons = document.querySelectorAll('.nav-buttons')
+;
     
 mobileBtn.addEventListener('click', () => {
     nav.style.right = "0%" ;
@@ -21,13 +24,12 @@ mobileBtnExit.addEventListener('click', () => {
 
 window.addEventListener("scroll", function(){
     if(window.scrollY >= cover_page.offsetHeight){
-        console.log("activated");
         nav_bar.style.position = "fixed";
         nav_bar.style.width ="100%";
         menu_button.style.paddingRight = "2em";
         cover_page.style.paddingTop ="84px";
         nav_bar.style.borderBottom = "2px solid white";
-        nav_bar.style.animation = "nav-bar-animation 300ms ease-out 0ms 1"
+        nav_bar.style.animation = "nav-bar-animation 300ms ease-out 0ms 1";
     }
 
     if(window.scrollY < cover_page.offsetHeight){
@@ -53,24 +55,25 @@ window.matchMedia(mediaQuery).addEventListener('change', event => {
   }
 })
 
+window.addEventListener('load',media_state);
 
-window.matchMedia(mediaQuery).addEventListener('change', event => {
-    if (event.matches) {
-        console.log(document.getElementsByClassName("nav-buttons"));
-        document.querySelectorAll('.nav-buttons').forEach(element => {
+window.matchMedia(mediaQuery).addEventListener('change',media_state);
+
+function media_state(){
+    if(window.matchMedia("(max-width: 767px)").matches){
+        page_top.appendChild(nav);
+        nav_buttons.forEach(element => {
             element.addEventListener("click",function(){
-                console.log("Clicking");
                 nav.style.right = "-80%" ;
             })
         });
-    } 
+    }
     else {
-        console.log(document.getElementsByClassName("nav-buttons"));
-        document.querySelectorAll('.nav-buttons').forEach(element => {
+        nav_location.appendChild(nav);
+        nav_buttons.forEach(element => {
             element.addEventListener("click",function(){
-                console.log("Clicking");
                 nav.style.right = "0%" ;
             })
         });
     }
-})
+}

@@ -5,10 +5,6 @@
   --grad-color: linear-gradient(to right, #312DFF,#45BCFF);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: var(--background-color);
   margin: 0;
