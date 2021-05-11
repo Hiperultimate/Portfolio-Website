@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;700&family=Raleway:wght@200;400;600&display=swap");
 :root {
-  --primary-color: #1C1D25;
-  --background-color: #F2F2F2;
-  --grad-color: linear-gradient(to right, #312DFF,#45BCFF);
+  --primary-color: #1c1d25;
+  --background-color: #f2f2f2;
+  --grad-color: linear-gradient(to right, #312dff, #45bcff);
 }
 
 body {
   background: var(--background-color);
   margin: 0;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 a {
   text-decoration: none;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   color: white;
 }
 
@@ -28,8 +30,8 @@ h1, h2, p {
   color: white;
   font-family: poppins;
   font-weight: 800;
-  background-image: -webkit-gradient(linear, left top, right top, from(#FF3D00), color-stop(#FFB800), color-stop(#FFB800), to(#FF3D00));
-  background-image: linear-gradient(to right, #FF3D00, #FFB800, #FFB800, #FF3D00);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff3d00), color-stop(#ffb800), color-stop(#ffb800), to(#ff3d00));
+  background-image: linear-gradient(to right, #ff3d00, #ffb800, #ffb800, #ff3d00);
   background-size: 300%;
   background-position: left;
   padding: 0.5em 2em;
@@ -42,12 +44,13 @@ h1, h2, p {
   line-height: 1.5em;
 }
 
-.gradient-button:hover, .gradient-button:focus {
+.gradient-button:hover,
+.gradient-button:focus {
   background-position: 90%;
 }
 
 .section-heading {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-weight: 300;
   font-size: 48px;
   margin-top: 3em;
@@ -59,7 +62,7 @@ h1, h2, p {
 .project-heading {
   margin: 0;
   padding-left: 1em;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 300;
   position: absolute;
   top: 50%;
@@ -69,7 +72,7 @@ h1, h2, p {
 
 .project-number {
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 800;
   font-size: 4em;
   padding-right: 0.4em;
@@ -86,16 +89,17 @@ h1, h2, p {
 label {
   display: block;
   color: white;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 1.2em;
   padding-top: 0.3em;
   margin-bottom: 0.5em;
 }
 
-input, textarea {
+input,
+textarea {
   color: white;
   resize: vertical;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 18px;
   padding-bottom: 0.1em;
   outline: none;
@@ -109,7 +113,7 @@ input, textarea {
 input[type="submit"] {
   border: none;
   display: inline-block;
-  padding: .7em .8em;
+  padding: 0.7em 0.8em;
   width: unset;
 }
 
@@ -156,18 +160,20 @@ input[type="submit"] {
   overflow: hidden;
 }
 
-.cover-page h1, .cover-page p, .cover-page a {
+.cover-page h1,
+.cover-page p,
+.cover-page a {
   color: white;
   margin: 0;
 }
 
 .cover-page h1 {
-  font-size: 2.0em;
+  font-size: 2em;
   font-weight: 600;
 }
 
 .cover-page .name {
-  font-family: 'poppins';
+  font-family: "poppins";
   font-size: 1.125em;
   font-weight: 200;
 }
@@ -185,7 +191,8 @@ input[type="submit"] {
   width: 70%;
 }
 
-.cover-page .container .left-col .sub-head, .cover-page .container .left-col .name {
+.cover-page .container .left-col .sub-head,
+.cover-page .container .left-col .name {
   z-index: 1;
 }
 
@@ -246,8 +253,8 @@ input[type="submit"] {
   position: relative;
   left: -4em;
   top: 2.3em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312DFF), to(#45BCFF));
-  background-image: linear-gradient(to right, #312DFF 30%, #45BCFF);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312dff), to(#45bcff));
+  background-image: linear-gradient(to right, #312dff 30%, #45bcff);
   width: 70vw;
   min-width: 15em;
   height: 8vh;
@@ -313,15 +320,15 @@ input[type="submit"] {
 }
 
 .project-page-body {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .project-page-body .navbar {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   position: fixed;
   width: 100%;
   z-index: 5;
-  border-bottom: 2px solid #1C1D25;
+  border-bottom: 2px solid #1c1d25;
 }
 
 .project-page-body .navbar #menu-button {
@@ -389,7 +396,7 @@ input[type="submit"] {
 }
 
 .project-page-body .project-page .page-content .project-description .description-background .center-align-description p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 18px;
   padding: 2em 0em;
   margin: 0;
@@ -410,11 +417,11 @@ input[type="submit"] {
 
 .background-text {
   white-space: nowrap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 800;
   font-size: 144px;
   position: absolute;
-  color: #22242C;
+  color: #22242c;
   z-index: 0;
   right: 0;
 }
@@ -548,8 +555,8 @@ input[type="submit"] {
 .aboutme-contact .contactme .heading-bg {
   position: absolute;
   top: 4em;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312DFF), to(#45BCFF));
-  background-image: linear-gradient(to right, #312DFF 30%, #45BCFF);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312dff), to(#45bcff));
+  background-image: linear-gradient(to right, #312dff 30%, #45bcff);
   width: 80%;
   height: 83%;
   max-height: 47em;
@@ -579,7 +586,8 @@ input[type="submit"] {
   margin-bottom: 2em;
 }
 
-.aboutme-contact .contactme .form-section form input, .aboutme-contact .contactme .form-section form textarea {
+.aboutme-contact .contactme .form-section form input,
+.aboutme-contact .contactme .form-section form textarea {
   margin-bottom: 3em;
 }
 
@@ -639,7 +647,7 @@ footer .footer-div .footer-social a:visited {
 }
 
 footer .footer-div p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 200;
   font-size: 14px;
 }
@@ -654,8 +662,8 @@ nav {
   right: -80%;
   top: 0;
   width: 80%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0066FF), color-stop(70%, #8A85C2));
-  background-image: linear-gradient(to bottom, #0066FF, #8A85C2 70%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0066ff), color-stop(70%, #8a85c2));
+  background-image: linear-gradient(to bottom, #0066ff, #8a85c2 70%);
   height: 100vh;
 }
 
@@ -725,7 +733,8 @@ nav .mobile-socials img {
 }
 
 @media only screen and (min-width: 768px) {
-  .menu, .menu-exit-icon {
+  .menu,
+  .menu-exit-icon {
     display: none;
   }
   .section-heading {
@@ -825,7 +834,8 @@ nav .mobile-socials img {
     padding-left: 3em;
     padding-right: 3em;
   }
-  .cover-page .container .left-col .text-centered .sub-head, .cover-page .container .left-col .text-centered .name {
+  .cover-page .container .left-col .text-centered .sub-head,
+  .cover-page .container .left-col .text-centered .name {
     white-space: nowrap;
     z-index: 1;
   }
@@ -920,8 +930,8 @@ nav .mobile-socials img {
     position: relative;
     left: 0em;
     top: 0em;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312DFF), to(#45BCFF));
-    background-image: linear-gradient(to right, #312DFF 30%, #45BCFF);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #312dff), to(#45bcff));
+    background-image: linear-gradient(to right, #312dff 30%, #45bcff);
     min-width: 100%;
     max-width: 100%;
     height: 5em;
@@ -1024,11 +1034,12 @@ nav .mobile-socials img {
     -webkit-transition: border-color 300ms;
     transition: border-color 300ms;
   }
-  .aboutme-contact .aboutme h1, .aboutme-contact .aboutme p {
+  .aboutme-contact .aboutme h1,
+  .aboutme-contact .aboutme p {
     color: white;
   }
   .aboutme-contact .aboutme .background-text {
-    color: #22242C;
+    color: #22242c;
     font-size: 188px;
   }
   .aboutme-contact .aboutme .aboutme-img {
@@ -1088,7 +1099,8 @@ nav .mobile-socials img {
   .aboutme-contact .contactme .form-container .form-section form {
     padding-bottom: 5em;
   }
-  .aboutme-contact .contactme .form-container .form-section input, .aboutme-contact .contactme .form-container .form-section textarea {
+  .aboutme-contact .contactme .form-container .form-section input,
+  .aboutme-contact .contactme .form-container .form-section textarea {
     margin-bottom: 2em;
     resize: none;
   }
@@ -1098,10 +1110,10 @@ nav .mobile-socials img {
     right: -3%;
   }
   .project-page-body {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
   }
   .project-page-body .navbar {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -1212,7 +1224,7 @@ nav .mobile-socials img {
     color: white;
   }
   footer .footer-div p {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-weight: 200;
     font-size: 14px;
   }
