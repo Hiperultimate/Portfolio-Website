@@ -33,3 +33,34 @@ window.matchMedia(mediaQuery).addEventListener('change', event => {
     nav.style.right = "0%" ;
   }
 })
+
+var to_home = document.getElementById("home-button");
+var to_projects = document.getElementById("projects-button");
+var to_aboutme = document.getElementById("aboutme-button");
+var to_contact = document.getElementById("contactme-button");
+var logo_to_home = document.getElementById("logo")
+
+to_home.addEventListener('click', function(){
+  scroll_cookie("page-top");
+  window.location.replace("/index.html");
+})
+logo_to_home.addEventListener('click', function(){
+  scroll_cookie("page-top");
+  window.location.replace("/index.html");
+})
+to_projects.addEventListener('click', function(){
+  scroll_cookie("projects");
+  window.location.replace("/index.html");
+})
+to_aboutme.addEventListener('click', function(){
+  scroll_cookie("aboutme-section");
+  window.location.replace("/index.html");
+})
+to_contact.addEventListener('click', function(){
+  scroll_cookie("contactme-section");
+  window.location.replace("/index.html");
+})
+
+function scroll_cookie(scroll_to){
+  document.cookie = escape("scroll_to="+ scroll_to + ";" +"expires=; domain=;" + "path=/;");
+}

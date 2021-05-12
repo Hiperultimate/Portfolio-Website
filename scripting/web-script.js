@@ -74,14 +74,22 @@ function media_state() {
   }
 }
 
-var to_home = document.getElementById("home-button")
-var to_projects = document.getElementById("projects-button")
-var to_aboutme = document.getElementById("aboutme-button")
-var to_contact = document.getElementById("contactme-button")
+var to_home = document.getElementById("home-button");
+var to_projects = document.getElementById("projects-button");
+var to_aboutme = document.getElementById("aboutme-button");
+var to_contact = document.getElementById("contactme-button");
+var logo_to_home = document.getElementById("logo");
+var hireme_to_contact = document.getElementById("hire-me");
 var timer = null;
 
 to_home.addEventListener('click', function(){
   smoothScroll("page-top", 100);
+})
+logo_to_home.addEventListener('click', function(){
+  smoothScroll("page-top", 100);
+})
+hireme_to_contact.addEventListener('click', function(){
+  smoothScroll("contactme-section", 100);
 })
 to_projects.addEventListener('click', function(){
   smoothScroll("projects", -20);
@@ -92,6 +100,67 @@ to_aboutme.addEventListener('click', function(){
 to_contact.addEventListener('click', function(){
   smoothScroll("contactme-section", 100);
 })
+
+
+window.addEventListener("load", function() {
+  console.log("Content loaded");
+  readCookieScroll();
+});
+
+
+function readCookieScroll(){
+  var scroll_cookie = unescape(document.cookie);
+  var cookie_arr = scroll_cookie.split(";");
+  var now = new Date();
+  // now.setMonth(now.getMonth() - 1) ;
+  
+  if(scroll_cookie.includes("scroll_to")){
+    for(var i=0; i < cookie_arr.length ;i++){
+      if(cookie_arr[i].includes("scroll_to")){
+        scroll_cookie = cookie_arr[i].slice(10,cookie_arr[i].length);
+        if(scroll_cookie.length == 0){
+          console.log("Nothing in scroll cookie");
+          return
+        }
+      }
+    }
+    cookieScroll(scroll_cookie);
+  } else{
+    console.log("No cookie found!");
+    return
+  }
+  
+  now.setMonth(now.getMonth() - 1) ;
+  document.cookie = escape("scroll_to=;" +"expires="+ now.toUTCString() + "; domain=;" + "path=/");
+
+  console.log(scroll_cookie);
+}
+
+timer
+
+function cookieScroll(scroll_to_me){
+  if(scroll_to_me == "page_top"){
+    // smoothScroll("page-top", 100);
+    to_home.click();
+  }
+
+  if(scroll_to_me == "projects"){
+    // smoothScroll("projects", -20);
+    to_projects.click();    
+  }
+
+  if(scroll_to_me == "aboutme-section"){
+    // smoothScroll("aboutme-section", 100);
+    to_aboutme.click();
+  }
+
+  if(scroll_to_me == "contactme-section"){
+    // smoothScroll("contactme-section", 100);
+    to_contact.click();
+  }
+}
+
+
 
 function smoothScroll(target_id , variation) {
   const targetID = document.getElementById(target_id);
@@ -111,6 +180,7 @@ function smoothScroll(target_id , variation) {
     if(progress < duration) window.requestAnimationFrame(step);
   }
 
+  console.log(target_id, targetPosition, startPosition, distance, duration);
 }
 
 function ease_in_out(t, b, c, d) {
