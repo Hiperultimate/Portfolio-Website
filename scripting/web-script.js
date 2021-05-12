@@ -79,6 +79,7 @@ var to_projects = document.getElementById("projects-button");
 var to_aboutme = document.getElementById("aboutme-button");
 var to_contact = document.getElementById("contactme-button");
 var logo_to_home = document.getElementById("logo");
+var footer_to_home = document.getElementById("footer-logo");
 var hireme_to_contact = document.getElementById("hire-me");
 var timer = null;
 
@@ -86,6 +87,9 @@ to_home.addEventListener('click', function(){
   smoothScroll("page-top", 100);
 })
 logo_to_home.addEventListener('click', function(){
+  smoothScroll("page-top", 100);
+})
+footer_to_home.addEventListener('click', function(){
   smoothScroll("page-top", 100);
 })
 hireme_to_contact.addEventListener('click', function(){

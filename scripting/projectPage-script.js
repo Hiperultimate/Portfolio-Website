@@ -38,7 +38,8 @@ var to_home = document.getElementById("home-button");
 var to_projects = document.getElementById("projects-button");
 var to_aboutme = document.getElementById("aboutme-button");
 var to_contact = document.getElementById("contactme-button");
-var logo_to_home = document.getElementById("logo")
+var logo_to_home = document.getElementById("logo");
+
 
 to_home.addEventListener('click', function(){
   scroll_cookie("page-top");

@@ -44,8 +44,7 @@ p {
   line-height: 1.5em;
 }
 
-.gradient-button:hover,
-.gradient-button:focus {
+.gradient-button:hover {
   background-position: 90%;
 }
 
@@ -723,6 +722,49 @@ nav .mobile-socials img {
 }
 
 @media only screen and (min-width: 570px) {
+  nav {
+    font-weight: bold;
+  }
+  nav .nav-menu #home-button {
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+    opacity: 0.8;
+  }
+  nav .nav-menu #projects-button {
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+    opacity: 0.8;
+  }
+  nav .nav-menu #aboutme-button {
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+    opacity: 0.8;
+  }
+  nav .nav-menu #resume-button {
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+    opacity: 0.8;
+  }
+  nav .nav-menu #contactme-button {
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+    opacity: 0.8;
+  }
+  nav .nav-menu #home-button:hover {
+    opacity: 1;
+  }
+  nav .nav-menu #projects-button:hover {
+    opacity: 1;
+  }
+  nav .nav-menu #aboutme-button:hover {
+    opacity: 1;
+  }
+  nav .nav-menu #resume-button:hover {
+    opacity: 1;
+  }
+  nav .nav-menu #contactme-button:hover {
+    opacity: 1;
+  }
   .cover-page .container {
     padding-bottom: 15em;
   }
@@ -745,6 +787,12 @@ nav .mobile-socials img {
   }
   .logo {
     padding: 1em;
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+  }
+  .logo:hover {
+    opacity: 1;
   }
   nav {
     position: relative;
@@ -816,7 +864,7 @@ nav .mobile-socials img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-width: 60%;
+    min-width: auto;
     padding-bottom: 0em;
     margin-left: auto;
     margin-right: auto;
@@ -877,6 +925,22 @@ nav .mobile-socials img {
     top: 0;
     padding-bottom: 1em;
     height: 3em;
+  }
+  .cover-page .desktop-socials .github-logo {
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+  }
+  .cover-page .desktop-socials .github-logo:hover {
+    opacity: 1;
+  }
+  .cover-page .desktop-socials .linkedin-logo {
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+  }
+  .cover-page .desktop-socials .linkedin-logo:hover {
+    opacity: 1;
   }
   .projects-section {
     overflow: hidden;
@@ -1211,17 +1275,41 @@ nav .mobile-socials img {
   footer .footer-div .footer-logo {
     height: 5em;
     width: 5em;
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+  }
+  footer .footer-div .footer-logo:hover {
+    opacity: 1;
   }
   footer .footer-div .footer-social {
     padding-top: 1em;
     padding-bottom: 0.8em;
   }
   footer .footer-div .footer-social a {
-    padding: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
     font-weight: 800;
   }
   footer .footer-div .footer-social a:visited {
     color: white;
+  }
+  footer .footer-div .github-link {
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+  }
+  footer .footer-div .linkedin-link {
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+  }
+  footer .footer-div .github-link:hover {
+    opacity: 1;
+  }
+  footer .footer-div .linkedin-link:hover {
+    opacity: 1;
   }
   footer .footer-div p {
     font-family: "Raleway";

@@ -53,8 +53,7 @@ p {
   line-height: 1.5em;
 }
 
-.gradient-button:hover,
-.gradient-button:focus {
+.gradient-button:hover {
   background-position: 90%;
 }
 
@@ -683,6 +682,47 @@ nav {
 }
 
 @media only screen and (min-width: 570px) {
+  nav{
+    font-weight: bold;
+    .nav-menu{
+      #home-button{
+        transition: opacity 200ms;
+        opacity:0.8;
+      }
+      #projects-button{
+        transition: opacity 200ms;
+        opacity:0.8;
+      }
+      #aboutme-button{
+        transition: opacity 200ms;
+        opacity:0.8;
+      }
+      #resume-button{
+        transition: opacity 200ms;
+        opacity:0.8;
+      }
+      #contactme-button{
+        transition: opacity 200ms;
+        opacity:0.8;
+      }
+      #home-button:hover{
+        opacity:1;
+      }
+      #projects-button:hover{
+        opacity:1;
+      }
+      #aboutme-button:hover{
+        opacity:1;
+      }
+      #resume-button:hover{
+        opacity:1;
+      }
+      #contactme-button:hover{
+        opacity:1;
+      }
+    }
+  }
+
   .cover-page {
     .container {
       padding-bottom: 15em;
@@ -712,6 +752,12 @@ nav {
 
   .logo {
     padding: 1em;
+    opacity: 0.8;
+    transition: opacity 200ms;
+  }
+
+  .logo:hover{
+    opacity: 1;
   }
 
   nav {
@@ -779,7 +825,7 @@ nav {
     .container {
       display: flex;
       align-items: center;
-      min-width: 60%;
+      min-width: auto;
 
       padding-bottom: 0em;
 
@@ -847,7 +893,23 @@ nav {
         padding-bottom: 1em;
         height: 3em;
       }
+      .github-logo{
+        opacity: 0.8;
+        transition: opacity 200ms;
+      }
+      .github-logo:hover{
+        opacity: 1;
+      }
+
+      .linkedin-logo{
+        opacity: 0.8;
+        transition: opacity 200ms;
+      }
+      .linkedin-logo:hover{
+        opacity: 1;
+      }
     }
+
   }
 
   .projects-section {
@@ -1185,20 +1247,49 @@ nav {
       .footer-logo {
         height: 5em;
         width: 5em;
+        opacity: 0.8;
+        transition: opacity 200ms;
+      }
+
+      .footer-logo:hover{
+        opacity: 1;
       }
 
       .footer-social {
         padding-top: 1em;
         padding-bottom: 0.8em;
         a {
-          padding: 3em;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          padding-left: 3em;
           font-weight: 800;
         }
 
         a:visited {
           color: white;
         }
+
+        
       }
+      
+      .github-link{
+        opacity: 0.8;
+        transition: opacity 200ms;
+      }
+
+      .linkedin-link{
+        opacity: 0.8;
+        transition: opacity 200ms;
+      }
+
+      .github-link:hover{
+        opacity: 1;
+      }
+
+      .linkedin-link:hover{
+        opacity: 1;
+      }
+      
 
       p {
         font-family: "Raleway";
