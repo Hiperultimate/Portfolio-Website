@@ -39,6 +39,31 @@ var to_projects = document.getElementById("projects-button");
 var to_aboutme = document.getElementById("aboutme-button");
 var to_contact = document.getElementById("contactme-button");
 var logo_to_home = document.getElementById("logo");
+logo_loading = document.getElementById("logo-loading");
+stroke = document.getElementsByClassName("stroke");
+logo_loading_div = document.querySelector(".loading-bg");
+
+
+logo_loading_div.style.display ="fixed";
+window.addEventListener('load', function() {
+  console.log("Website Loading Complete!");
+  loadingAnimationEnd();
+
+  setTimeout(function(){
+    logo_loading_div.style.left = "-100vw";
+  },1300);
+  setTimeout(function(){
+    logo_loading_div.style.display ="none";
+    
+  }, 1600);
+})
+function loadingAnimationEnd(){
+  logo_loading.classList.add("logo-loadingEnd");
+  for(var i = 0 ; i < stroke.length ; i++){
+      stroke[i].style.strokeDasharray = "800";
+  }
+}
+
 
 
 to_home.addEventListener('click', function(){

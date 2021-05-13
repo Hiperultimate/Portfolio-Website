@@ -10,6 +10,32 @@ page_top = document.getElementById("page-top");
 nav_location = document.getElementById("nav-location");
 nav_buttons = document.querySelectorAll(".nav-buttons");
 
+// var body=document.getElementsByTagName('body')[0];
+logo_loading = document.getElementById("logo-loading");
+stroke = document.getElementsByClassName("stroke");
+logo_loading_div = document.querySelector(".loading-bg");
+
+
+logo_loading_div.style.display ="fixed";
+window.addEventListener('load', function() {
+  loadingAnimationEnd();
+
+  setTimeout(function(){
+    logo_loading_div.style.left = "-100vw";
+  },1300);
+  setTimeout(function(){
+    logo_loading_div.style.display ="none";
+    
+  }, 1600);
+})
+
+function loadingAnimationEnd(){
+  logo_loading.classList.add("logo-loadingEnd");
+  for(var i = 0 ; i < stroke.length ; i++){
+      stroke[i].style.strokeDasharray = "800";
+  }
+}
+
 mobileBtn.addEventListener("click", () => {
   nav.style.right = "0%";
   nav.style.transition = "right 0.4s"; //Fixes the navbar transition animation on resizing the screen
@@ -123,7 +149,7 @@ function readCookieScroll(){
   if(scroll_cookie.includes("scroll_to")){
     for(var i=0; i < cookie_arr.length ;i++){
       if(cookie_arr[i].includes("scroll_to")){
-        scroll_cookie = cookie_arr[i].slice(10,cookie_arr[i].length);
+        scroll_cookie = cookie_arr[i].slice(11,cookie_arr[i].length);
         if(scroll_cookie.length == 0){
           return
         }
@@ -138,7 +164,6 @@ function readCookieScroll(){
   document.cookie = escape("scroll_to=;" +"expires="+ now.toUTCString() + "; domain=;" + "path=/");
 }
 
-timer
 
 function cookieScroll(scroll_to_me){
   if(scroll_to_me == "page_top"){
