@@ -68,23 +68,23 @@ function loadingAnimationEnd(){
 
 to_home.addEventListener('click', function(){
   scroll_cookie("page-top");
-  window.location.replace("/index.html");
+  window.location.replace("index.html");
 })
 logo_to_home.addEventListener('click', function(){
   scroll_cookie("page-top");
-  window.location.replace("/index.html");
+  window.location.replace("index.html");
 })
 to_projects.addEventListener('click', function(){
   scroll_cookie("projects");
-  window.location.replace("/index.html");
+  window.location.replace("index.html");
 })
 to_aboutme.addEventListener('click', function(){
   scroll_cookie("aboutme-section");
-  window.location.replace("/index.html");
+  window.location.replace("index.html");
 })
 to_contact.addEventListener('click', function(){
   scroll_cookie("contactme-section");
-  window.location.replace("/index.html");
+  window.location.replace("index.html");
 })
 
 function scroll_cookie(scroll_to){
