@@ -5,6 +5,10 @@
   --grad-color: linear-gradient(to right, #312dff, #45bcff);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background-color);
   margin: 0;
@@ -13,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 h1,
@@ -474,6 +479,12 @@ input[type="submit"] {
   overflow: hidden;
 }
 
+.aboutme-contact .aboutme #aboutme-scroll {
+  display: block;
+  position: absolute;
+  top: -110px;
+}
+
 .aboutme-contact .aboutme .all-tools {
   display: none;
 }
@@ -579,6 +590,12 @@ input[type="submit"] {
   position: relative;
   height: 55em;
   overflow: hidden;
+}
+
+.aboutme-contact .contactme #contactme-scroll {
+  display: block;
+  position: absolute;
+  top: -110px;
 }
 
 .aboutme-contact .contactme .section-heading {

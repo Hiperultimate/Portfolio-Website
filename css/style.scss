@@ -7,7 +7,7 @@
 }
 
 html {
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +18,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 h1,
@@ -464,6 +465,11 @@ input[type="submit"] {
     position: relative;
     overflow: hidden;
 
+    #aboutme-scroll{
+      display: block;
+      position: absolute;
+      top: -110px;
+    }
     .all-tools {
       display: none;
     }
@@ -563,6 +569,13 @@ input[type="submit"] {
     position: relative;
     height: 55em;
     overflow: hidden;
+
+
+    #contactme-scroll{
+      display: block;
+      position: absolute;
+      top: -110px;
+    }
 
     .section-heading {
       position: relative;
