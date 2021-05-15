@@ -25,7 +25,6 @@
 .logo-loading path{
     stroke: white;
     stroke-dasharray: 400;
-    animation: loading 1s ease-in 0s 1 normal;
 }
 
 @keyframes loading-1{

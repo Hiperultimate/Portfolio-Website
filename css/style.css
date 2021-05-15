@@ -58,14 +58,6 @@ p {
 .loading-bg .logo-loading path {
   stroke: white;
   stroke-dasharray: 400;
-  -webkit-animation: loading 1s ease-in 0s infinite normal;
-          animation: loading 1s ease-in 0s infinite normal;
-}
-
-.loading-bg .logo-loadingEnd path {
-  stroke: white;
-  -webkit-animation: finish-loading 1.3s cubic-bezier(0.85, 0.09, 0.38, 0.65) 0s 1 normal;
-          animation: finish-loading 1.3s cubic-bezier(0.85, 0.09, 0.38, 0.65) 0s 1 normal;
 }
 
 .gradient-button {
@@ -753,13 +745,25 @@ nav .mobile-socials img {
   height: 3em;
 }
 
-@-webkit-keyframes loading {
+@-webkit-keyframes loading-1 {
   to {
     stroke-dashoffset: 800;
   }
 }
 
-@keyframes loading {
+@keyframes loading-1 {
+  to {
+    stroke-dashoffset: 800;
+  }
+}
+
+@-webkit-keyframes loading-2 {
+  to {
+    stroke-dashoffset: 800;
+  }
+}
+
+@keyframes loading-2 {
   to {
     stroke-dashoffset: 800;
   }

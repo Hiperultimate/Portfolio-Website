@@ -56,12 +56,6 @@ p {
   .logo-loading path{
     stroke: white;
     stroke-dasharray: 400;
-    animation: loading 1s ease-in 0s infinite normal;
-  }
-
-  .logo-loadingEnd path{
-    stroke: white;
-    animation: finish-loading 1.3s cubic-bezier(.85,.09,.38,.65) 0s 1 normal;
   }
 }
 
@@ -717,11 +711,16 @@ nav {
   }
 }
 
-@keyframes loading{
+@keyframes loading-1{
   to{
       stroke-dashoffset: 800 ;
   }
+}
 
+@keyframes loading-2{
+  to{
+      stroke-dashoffset: 800 ;
+  }
 }
 
 @keyframes finish-loading{
