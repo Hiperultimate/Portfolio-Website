@@ -1070,6 +1070,7 @@ nav .mobile-socials img {
   .projects-section .project-mini .project-top-section .project-number {
     z-index: 1;
     position: relative;
+    top: 5px;
     left: -55px;
     padding: 0;
     margin: 0;
