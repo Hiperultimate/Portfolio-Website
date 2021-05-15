@@ -2,43 +2,44 @@ var logo = document.getElementById("logo-loading");
 var stroke = document.getElementsByClassName("stroke");
 
 var stop_animation = 1;
+var use = 0;
 
-function alternate_animate(dashoffset){
-    for(var i = 0; i < stroke.length; i++){
-        stroke[i].style.strokeDashoffset = dashoffset;
-    }
+function alternate_animate(use){
     if(stop_animation == 0){
-        for(var i = 0; i < stroke.length; i++){
-            console.log(window.getComputedStyle(stroke[i]).strokeDasharray);
-            stroke[i].style.strokeDashoffset = 0;
-            stroke[i].style.strokeDasharray = 800;
-        }
+        loadingAnimationEnd();
         return
     }
-    if(dashoffset == 800){
-        dashoffset = 0;
-    } else {
-        dashoffset = 800;
+    console.log("use is : " + use);
+    if(use == 1){
+        for(var i = 0; i < stroke.length; i++){
+            stroke[i].style.animation = "loading-1 1000ms ease-in 0s 1 normal";
+            console.log("animation 1");
+        }
+        use = 0;
+    }else{
+        for(var i = 0; i < stroke.length; i++){
+            stroke[i].style.animation = "loading-2 1000ms ease-in 0s 1 normal";
+            console.log("animation 2");
+        }
+        use = 1;
     }
+    
     setTimeout(function(){
-        alternate_animate(dashoffset)
+        alternate_animate(use)
     },1000)
 }
 
-alternate_animate(800)
+alternate_animate(use)
 
 setTimeout(function(){
     stop_animation = 0;
-},2300)
+},2200)
 
-// function loadingAnimationEnd(){
-//     logo.classList.add("logo-loadingEnd");
-//     for(var i = 0 ; i < stroke.length ; i++){
-//         stroke[i].style.strokeDasharray = "800";
-//     }
-// }
-
-
-// console.log("Starting timer");
-// setTimeout(loadingAnimationEnd, 2500);
-// console.log("operation finished");
+function loadingAnimationEnd(){
+    for(var i = 0; i < stroke.length; i++){
+        stroke[i].style.animation = "finish-loading 1.3s cubic-bezier(.85,.09,.38,.65) 0s 1 normal";
+    }
+    for(var i = 0 ; i < stroke.length ; i++){
+        stroke[i].style.strokeDasharray = "800";
+    }
+}

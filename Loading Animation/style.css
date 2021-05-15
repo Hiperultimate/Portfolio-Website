@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Try using Transition */
-
 .loading-bg{
     position:absolute;
     width:100%;
@@ -26,28 +24,18 @@
 
 .logo-loading path{
     stroke: white;
-    stroke-dashoffset: 0;
-    stroke-dasharray: 400; /*stroke-dasharray: 800 and offset 0 will make comeplete shape*/
-    
-    transition: stroke-dashoffset 1000ms cubic-bezier(.85,.09,.38,.65);
+    stroke-dasharray: 400;
+    animation: loading 1s ease-in 0s 1 normal;
 }
 
-/* .logo-loading path{
-    stroke-dasharray: 700;
-} */
+@keyframes loading-1{
+    to{
+        stroke-dashoffset: 800 ;
+    }
 
-/* .logo-loading path{
-    stroke: white;
-    stroke-dasharray: 400;
-    animation: loading 1s ease-in 0s infinite normal;
-} */
+}
 
-/* .logo-loadingEnd path{
-    stroke: white;
-    animation: finish-loading 1.3s cubic-bezier(.85,.09,.38,.65) 0s 1 normal;
-} */
-
-@keyframes loading{
+@keyframes loading-2{
     to{
         stroke-dashoffset: 800 ;
     }
