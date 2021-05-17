@@ -413,10 +413,14 @@ input[type="submit"] {
               padding: 2em 0em;
             }
 
+            a{
+              text-decoration: underline;
+            }
+
             p {
               font-family: "Raleway";
               font-size: 18px;
-              padding: 2em 0em;
+              padding: 0;
               margin: 0;
             }
 
@@ -424,6 +428,12 @@ input[type="submit"] {
               font-family: "Raleway";
               font-size: 18px;
               color: white;
+            }
+
+            h1{
+              font-size: 1.6em;
+              padding: 2em 0em 1em 0em;
+              margin: 0;
             }
           }
         }
@@ -452,6 +462,7 @@ input[type="submit"] {
   position: absolute;
   color: #22242c;
   z-index: 0;
+  transform: translateY(-5%);
   right: 0;
 }
 

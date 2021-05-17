@@ -428,10 +428,14 @@ input[type="submit"] {
   padding: 2em 0em;
 }
 
+.project-page-body .project-page .page-content .project-description .description-background .center-align-description a {
+  text-decoration: underline;
+}
+
 .project-page-body .project-page .page-content .project-description .description-background .center-align-description p {
   font-family: "Raleway";
   font-size: 18px;
-  padding: 2em 0em;
+  padding: 0;
   margin: 0;
 }
 
@@ -439,6 +443,12 @@ input[type="submit"] {
   font-family: "Raleway";
   font-size: 18px;
   color: white;
+}
+
+.project-page-body .project-page .page-content .project-description .description-background .center-align-description h1 {
+  font-size: 1.6em;
+  padding: 2em 0em 1em 0em;
+  margin: 0;
 }
 
 .project-page-body .project-page .page-content .project-description .button-position {
@@ -462,6 +472,8 @@ input[type="submit"] {
   position: absolute;
   color: #22242c;
   z-index: 0;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
   right: 0;
 }
 
