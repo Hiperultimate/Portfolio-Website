@@ -435,6 +435,12 @@ input[type="submit"] {
   margin: 0;
 }
 
+.project-page-body .project-page .page-content .project-description .description-background .center-align-description h1, .project-page-body .project-page .page-content .project-description .description-background .center-align-description li {
+  font-family: "Raleway";
+  font-size: 18px;
+  color: white;
+}
+
 .project-page-body .project-page .page-content .project-description .button-position {
   display: block;
   position: absolute;
@@ -1323,6 +1329,8 @@ nav .mobile-socials img {
   .project-page-body .project-page .page-content .desktop-view .desktop-images img {
     z-index: 4;
     max-width: 100%;
+    width: 1920px;
+    height: auto;
     margin-right: -2.5em;
     padding: 1em;
   }
@@ -1338,7 +1346,19 @@ nav .mobile-socials img {
     overflow: hidden;
   }
   .project-page-body .project-page .page-content .desktop-view .project-description .description-background p {
-    padding-left: 1.5em;
+    padding-top: 0;
+    padding-left: 1.8em;
+    padding-bottom: 0em;
+  }
+  .project-page-body .project-page .page-content .desktop-view .project-description .description-background h1:first-of-type {
+    padding-top: 0;
+  }
+  .project-page-body .project-page .page-content .desktop-view .project-description .description-background h1 {
+    padding-top: 2em;
+    padding-left: 1em;
+  }
+  .project-page-body .project-page .page-content .desktop-view .project-description .description-background ul {
+    padding-left: 4em;
   }
   .project-page-body .project-page .page-content .desktop-view .project-description .button-position {
     position: absolute;
