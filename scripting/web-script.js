@@ -125,3 +125,7 @@ function media_state() {
     });
   }
 }
+
+function submitmessage(){
+  alert("Message sent successfully.");
+}

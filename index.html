@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="icon" href="./img/logo-icon.png">
         <link rel="stylesheet" href="./css/style.css">
         <title>Manak's Portfolio Website</title>
     </head>
@@ -135,13 +136,13 @@
                         <div class="project-img-section"> 
                             <img src="img/portfolio-image.svg" alt="axcessor-image">
                             <div class="button-move-area">
-                                <a href="axcessor-page.html" class="axcessor-button gradient-button">View Project</a>
+                                <a href="personal-portfolio.html" class="axcessor-button gradient-button">View Project</a>
                             </div>
                             
                         </div>
                         <div class="project-para para-gap">
                             <p>A high performance, Responsive website which works on mobile phones, tablet and desktop, made with the power of CSS3, HTML5, SVGs and JavaScript.
-                            Designed, prototyped and planned with the help of figma.
+                            Designed, prototyped and planned with the help of figma.&emsp;&emsp;&emsp;&emsp;&emsp;
                             </p>
                         </div>
                     </div>
@@ -162,8 +163,8 @@
                     </div>
                     <div class="aboutme-para para-gap">
                         <p>I'm Manak Kumar Singh, a 22-year-old Software and Web Developer. 
-                        I have experience in working as a Django back-end web developer but I can also build front-end applications using SASS/CSS3, JavaScript, and HTML5. 
-                        Currently, I am looking for internships or jobs that would help me gain more work experience and for that, I have worked multiple personal projects in hopes to get one. 
+                        I have experience in working as a Django back-end web developer but I can also build front-end applications using SCSS/CSS3, JavaScript, and HTML5. 
+                        Currently, I am looking for internships or jobs that would help me gain more work experience and for that, I have created multiple personal projects in hopes to get one. 
                         I am always open to learning new/popular APIs and frameworks and am usually spending time every day learning them, so feel free to contact me at 
                         manak.officialwork@gmail.com or just drop me a message below!   
                         </p>
@@ -196,13 +197,15 @@
                     <div class="heading-bg"></div>
                     <div class="container form-section center-div">
                         <div class="center-div">
-                            <form action ="">
+                            <form action ="https://formsubmit.co/manak.officialwork@gmail.com" method="post" onsubmit="submitmessage()">
                                 <label for="name">Name *</label>
-                                <input type="text" id="name" name="name">
+                                <input type="text" id="name" name="name" required>
                                 <label for="email">E-mail *</label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" required>
                                 <label for="message">Message *</label>
-                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="https://hiperultimate.github.io/Portfolio-Website/#contactme-scroll">
                                 <input type="submit" value="Send Message" class="gradient-button contact-button">
                             </form>
                         </div>
