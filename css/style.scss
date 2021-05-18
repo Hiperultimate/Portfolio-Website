@@ -27,6 +27,10 @@ p {
   color: white;
 }
 
+span{
+  color: #ff9900;
+}
+
 .logo {
   height: 3em;
   width: auto;
@@ -469,6 +473,11 @@ input[type="submit"] {
 .aboutme-contact {
   background-color: var(--primary-color);
 
+  .contact-me{
+    text-decoration: underline;
+    color: #ff9900;
+  }
+
   .aboutme {
     background-color: var(--primary-color);
     height: 100%;
@@ -756,6 +765,22 @@ nav {
 
   100% {
     transform: translateY(0%);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width:370px){
+  .heading-bg{
+    width: 90vw !important; 
+  }
+
+  .project-heading{
+    padding-left: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1300px){
+  .content{
+    width: 70% !important;
   }
 }
 
