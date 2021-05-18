@@ -51,9 +51,9 @@ span{
     min-height: 30vh;
     max-width: 40vw;
     max-height: 40vh;
-    top:50%;
+    top:30%;
     left:50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-30%);
     stroke-width: 5px;
   }
 
@@ -840,6 +840,14 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
+  .loading-bg{
+    #logo-loading{
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+  }  
+
   .menu,
   .menu-exit-icon {
     display: none;
