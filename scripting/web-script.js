@@ -73,7 +73,7 @@ mobileBtnExit.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= cover_page.offsetHeight) {
+  if (window.scrollY >= cover_page.offsetHeight / 2) {
     nav_bar.style.position = "fixed";
     nav_bar.style.width = "100%";
     menu_button.style.paddingRight = "2em";
@@ -82,7 +82,7 @@ window.addEventListener("scroll", function () {
     nav_bar.style.animation = "nav-bar-animation 300ms ease-out 0ms 1";
   }
 
-  if (window.scrollY < cover_page.offsetHeight) {
+  if (window.scrollY < cover_page.offsetHeight / 2) {
     nav_bar.style.position = "relative";
     nav_bar.style.width = "auto";
     menu_button.style.paddingRight = "0em";
