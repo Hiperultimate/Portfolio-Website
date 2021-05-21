@@ -344,6 +344,7 @@ input[type="submit"] {
 
 .projects-section .project-mini .mid-section .project-para {
   text-align: center;
+  height: 8em;
 }
 
 .projects-section .project-mini .mid-section .project-para p {
