@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="icon" href="./img/logo-icon.png">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Manak's Portfolio Website</title>
     </head>
 
@@ -75,11 +76,11 @@
         </section>
 
         <section class="projects-section" id="projects">
-            <h1 class="section-heading">Projects</h1>
+            <h1 class="section-heading" data-aos="fade-down">Projects</h1>
 
             <div class="project-grid">
 
-                <div class="container project-mini ">
+                <div class="container project-mini " data-aos="fade-right">
                     <div class="container project-top-section">
                         <div class="heading-bg"></div>
                         <h2 class="project-heading">Axcessor</h2>
@@ -102,7 +103,7 @@
                     </div>
                 </div>
 
-                <div class="container project-mini ">
+                <div class="container project-mini " data-aos="fade-right">
                     <div class="container project-top-section">
                         <div class="heading-bg"></div>
                         <h2 class="project-heading">Image Reel</h2>
@@ -125,7 +126,7 @@
                     </div>
                 </div>
 
-                <div class="container project-mini ">
+                <div class="container project-mini " data-aos="fade-right">
                     <div class="container project-top-section">
                         <div class="heading-bg"></div>
                         <h2 class="project-heading">My Website</h2>
@@ -161,7 +162,7 @@
                     <div class="center-div">
                         <h1 class="section-heading">About Me/Skills</h1>
                     </div>
-                    <div class="aboutme-para para-gap">
+                    <div class="aboutme-para para-gap" data-aos="zoom-in">
                         <p>I'm Manak Kumar Singh, a 22-year-old <span>Software</span> and <span>Web Developer</span>. 
                         I have <span>experience</span> in working as a <span>Django back-end web developer</span> but I can also build <span>front-end</span> applications using <span>SCSS/CSS3</span>, <span>JavaScript</span>, and <span>HTML5</span>. 
                         Currently, I am looking for <span>internships</span> or <span>jobs</span> that would help me gain more work experience and for that, I have created <span>multiple personal projects</span> in hopes to get one. 
@@ -173,7 +174,7 @@
                 </div>
                 <div class='tool-width'>
                     <div class="all-tools">
-                        <div class="center-tools">
+                        <div class="center-tools" data-aos="zoom-in">
                             <img src="img/js.svg" class="tool-logo" id="js-logo" alt="">
                             <img src="img/css3.svg" class="tool-logo" id="css-logo" alt="">
                             <img src="img/html5.svg" class="tool-logo" id="html-logo" alt="">
@@ -189,7 +190,7 @@
                 </div>
             </div>
 
-            <div class="container contactme" id="contactme-section">
+            <div class="container contactme" id="contactme-section" data-aos="fade-right">
                 <div id="contactme-scroll"></div>
                 <h1 class="section-heading">Contact Me</h1>
 
@@ -227,6 +228,9 @@
         </footer>
 
         <script src="./scripting/web-script.js"></script>
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
